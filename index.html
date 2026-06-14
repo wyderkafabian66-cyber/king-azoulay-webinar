@@ -1,0 +1,2431 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- King Azoulay · July 1st Webinar -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>King Azoulay — Upgrade Your Life, Wealth & Walk With God</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;700&family=Cinzel:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.min.css">
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+<style>
+:root {
+  --gold:        #C9A961;
+  --gold-bright: #E5C77A;
+  --gold-deep:   #8B6F2E;
+  --black:       #0A0A0A;
+  --ink:         #111111;
+  --coal:        #1A1A1A;
+  --smoke:       #222222;
+  --ash:         #2E2E2E;
+  --bone:        #F5F1E8;
+  --grey:        #8a8579;
+  --red:         #B33A2A;
+  --border:      rgba(201,169,97,0.15);
+  --border-strong: rgba(201,169,97,0.4);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { background:var(--black); }
+body {
+  color:var(--bone);
+  font-family:'Manrope', sans-serif;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* ANNOUNCEMENT */
+.ann {
+  background:linear-gradient(90deg, var(--gold-deep) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+  padding:11px 24px;
+  text-align:center;
+  position:relative;
+}
+.ann p {
+  font-family:'Inter';
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  color:#0a0a0a;
+}
+.ann strong { color:#0a0a0a; }
+
+/* NAV */
+nav {
+  background:rgba(10,10,10,0.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+  padding:14px 48px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:99;
+}
+.nav-logo {
+  font-family:'Cinzel', serif;
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:6px;
+  text-transform:uppercase;
+  color:var(--gold);
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.nav-logo svg,
+.nav-logo img {
+  width:42px; height:42px;
+  border-radius:50%;
+  object-fit:cover;
+  filter:drop-shadow(0 0 8px rgba(201,169,97,0.4));
+}
+.nav-pill {
+  font-family:'Manrope';
+  font-size:13px;
+  font-weight:600;
+  color:var(--grey);
+}
+.nav-pill strong { color:var(--bone); font-weight:800; }
+.nav-btn {
+  background:linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+  color:#0a0a0a;
+  font-family:'Inter';
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  padding:12px 22px;
+  border-radius:4px;
+  text-decoration:none;
+  transition:all .2s;
+  box-shadow:0 4px 16px rgba(201,169,97,0.25);
+  border:1px solid var(--gold-bright);
+}
+.nav-btn:hover {
+  transform:translateY(-1px);
+  box-shadow:0 6px 22px rgba(201,169,97,0.4);
+}
+
+/* HERO */
+.hero {
+  background:var(--black);
+  padding:64px 48px 32px;
+  position:relative;
+  overflow:hidden;
+  text-align:center;
+}
+.hero::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(201,169,97,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 20% 80%, rgba(201,169,97,0.06) 0%, transparent 40%),
+    radial-gradient(ellipse at 80% 80%, rgba(201,169,97,0.06) 0%, transparent 40%);
+  pointer-events:none;
+}
+.hero::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(201,169,97,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,169,97,0.025) 1px, transparent 1px);
+  background-size:60px 60px;
+  pointer-events:none;
+  mask-image:radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image:radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+.hero-inner { position:relative; z-index:1; max-width:980px; margin:0 auto; }
+
+.hero-eyebrow {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  border:1px solid var(--border-strong);
+  color:var(--gold);
+  font-family:'Inter';
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  padding:8px 18px;
+  border-radius:4px;
+  margin-bottom:28px;
+  background:rgba(201,169,97,0.06);
+}
+.hero-eyebrow .dot {
+  width:6px; height:6px; border-radius:50%;
+  background:var(--gold);
+  box-shadow:0 0 8px var(--gold);
+  animation:pulseGold 2s infinite;
+}
+@keyframes pulseGold {
+  0%, 100% { opacity:1; }
+  50% { opacity:0.4; }
+}
+
+.hero-h1 {
+  font-family:'Cinzel', serif;
+  font-size:clamp(32px, 5vw, 64px);
+  font-weight:700;
+  line-height:1.05;
+  letter-spacing:-0.5px;
+  color:var(--bone);
+  max-width:920px;
+  margin:0 auto 22px;
+  text-wrap:balance;
+}
+.hero-h1 em {
+  font-family:'Instrument Serif', serif;
+  font-style:italic;
+  font-weight:400;
+  background:linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  letter-spacing:0px;
+  text-transform:none;
+}
+
+.hero-sub {
+  font-family:'Manrope';
+  font-size:17px;
+  font-weight:400;
+  color:#b8b3a7;
+  line-height:1.7;
+  max-width:620px;
+  margin:0 auto 34px;
+}
+.hero-sub strong { color:var(--bone); font-weight:700; }
+
+.hero-meta {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  margin-bottom:36px;
+  flex-wrap:wrap;
+}
+.hm-item {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:0 24px;
+  border-right:1px solid var(--border);
+}
+.hm-item:last-child { border-right:none; }
+.hm-icon {
+  width:36px; height:36px;
+  border-radius:50%;
+  background:rgba(201,169,97,0.1);
+  border:1px solid var(--border-strong);
+  display:flex; align-items:center; justify-content:center;
+  font-size:16px;
+  color:var(--gold);
+}
+.hm-txt { text-align:left; }
+.hm-label {
+  font-family:'Inter';
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--grey);
+}
+.hm-val {
+  font-family:'Inter';
+  font-size:14px;
+  font-weight:800;
+  color:var(--bone);
+  letter-spacing:-0.3px;
+  margin-top:2px;
+}
+
+.hero-cta {
+  display:inline-block;
+  background:linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+  color:#0a0a0a;
+  font-family:'Inter';
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  padding:20px 48px;
+  border-radius:4px;
+  text-decoration:none;
+  box-shadow:0 8px 32px rgba(201,169,97,0.3);
+  border:1px solid var(--gold-bright);
+  transition:all .2s;
+  position:relative;
+  overflow:hidden;
+}
+.hero-cta:hover {
+  transform:translateY(-2px);
+  box-shadow:0 12px 40px rgba(201,169,97,0.5);
+}
+
+.hero-trust {
+  margin-top:18px;
+  font-family:'Manrope';
+  font-size:12px;
+  font-weight:500;
+  color:var(--grey);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+}
+.hero-trust .stars { color:var(--gold); letter-spacing:1px; }
+
+/* PORTRAIT / VISUAL */
+.hero-visual {
+  position:relative;
+  width:100%;
+  max-width:640px;
+  margin:0 auto 30px;
+  height:400px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.portrait-frame {
+  position:relative;
+  width:300px;
+  height:360px;
+  border-radius:8px;
+  background:linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  border:1px solid var(--border-strong);
+  box-shadow:
+    0 0 0 1px rgba(201,169,97,0.1),
+    0 20px 60px rgba(0,0,0,0.6),
+    0 0 80px rgba(201,169,97,0.15);
+  z-index:2;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.portrait-frame::before {
+  content:'';
+  position:absolute;
+  inset:8px;
+  border:1px solid var(--border);
+  border-radius:4px;
+  pointer-events:none;
+  z-index:2;
+}
+.portrait-frame img {
+  width:100%; height:100%;
+  object-fit:cover;
+  object-position:center 45%;
+  position:absolute; inset:0;
+}
+.portrait-frame::after {
+  content:'';
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height:80px;
+  background:linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.85) 100%);
+  z-index:2;
+  pointer-events:none;
+}
+.portrait-init {
+  font-family:'Cinzel', serif;
+  font-size:120px;
+  font-weight:900;
+  background:linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  line-height:1;
+}
+.portrait-name {
+  position:absolute;
+  bottom:18px;
+  left:0; right:0;
+  text-align:center;
+  font-family:'Cinzel', serif;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:5px;
+  color:var(--gold);
+  text-transform:uppercase;
+  z-index:4;
+  text-shadow:0 1px 4px rgba(0,0,0,0.8);
+}
+.crest-l, .crest-r {
+  position:absolute;
+  top:50%;
+  width:120px;
+  height:170px;
+  border-radius:6px;
+  background:linear-gradient(180deg, var(--ink) 0%, var(--black) 100%);
+  border:1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:14px;
+  box-shadow:0 12px 32px rgba(0,0,0,0.5);
+}
+.crest-l { left:30px; transform:translateY(-50%) rotate(-8deg); z-index:1; }
+.crest-r { right:30px; transform:translateY(-50%) rotate(8deg); z-index:1; }
+.crest-sym { font-size:28px; color:var(--gold); }
+.crest-lbl {
+  font-family:'Cinzel', serif;
+  font-size:8px; font-weight:600; letter-spacing:2px;
+  color:var(--gold); text-transform:uppercase; text-align:center;
+}
+.crest-sub {
+  font-family:'Manrope';
+  font-size:9px; font-weight:600;
+  color:var(--grey); text-align:center;
+}
+
+/* TICKER */
+.ticker {
+  background:linear-gradient(90deg, var(--ink) 0%, var(--coal) 50%, var(--ink) 100%);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:14px 0;
+  overflow:hidden;
+  width:100%;
+}
+.ticker-track {
+  display:flex; white-space:nowrap;
+  animation:scroll 38s linear infinite;
+  width:fit-content;
+}
+.t-item {
+  display:flex; align-items:center; gap:10px;
+  padding:0 32px; flex-shrink:0;
+  font-family:'Inter'; font-size:11px; font-weight:800;
+  letter-spacing:2.5px; text-transform:uppercase;
+  color:var(--gold);
+  border-right:1px solid var(--border);
+}
+.t-item .dot {
+  width:5px; height:5px; border-radius:50%;
+  background:var(--gold);
+  box-shadow:0 0 6px var(--gold);
+}
+@keyframes scroll {
+  from { transform:translateX(0); }
+  to { transform:translateX(-50%); }
+}
+
+/* STORY SECTION */
+.story {
+  background:var(--black);
+  padding:80px 48px;
+  position:relative;
+  overflow:hidden;
+  border-bottom:1px solid var(--border);
+}
+.story::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at 80% 50%, rgba(201,169,97,0.08) 0%, transparent 55%);
+  pointer-events:none;
+}
+.story-inner {
+  max-width:1100px;
+  margin:0 auto;
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:60px;
+  align-items:center;
+}
+.story-visual {
+  position:relative;
+  aspect-ratio:4/5;
+  border-radius:10px;
+  background:linear-gradient(180deg, var(--coal) 0%, var(--ink) 100%);
+  border:1px solid var(--border-strong);
+  box-shadow:
+    0 0 0 1px rgba(201,169,97,0.08),
+    0 30px 80px rgba(0,0,0,0.6),
+    0 0 100px rgba(201,169,97,0.12);
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.story-visual::before {
+  content:'';
+  position:absolute;
+  inset:10px;
+  border:1px solid var(--border);
+  border-radius:6px;
+  pointer-events:none;
+  z-index:2;
+}
+.story-visual img {
+  width:100%; height:100%; object-fit:cover;
+  position:absolute; inset:0;
+}
+.story-placeholder {
+  text-align:center;
+  padding:30px;
+  color:var(--grey);
+  font-family:'Inter';
+}
+.story-placeholder .icon {
+  font-size:48px;
+  margin-bottom:14px;
+  color:var(--gold);
+}
+.story-placeholder .lbl {
+  font-size:10px; font-weight:900;
+  letter-spacing:3px; text-transform:uppercase;
+  color:var(--gold); margin-bottom:6px;
+}
+.story-placeholder .sub {
+  font-size:12px; font-weight:500;
+  color:var(--grey);
+}
+.story-corner {
+  position:absolute;
+  top:18px; left:18px;
+  font-family:'Cinzel', serif;
+  font-size:9px; font-weight:600; letter-spacing:3px;
+  color:var(--gold);
+  text-transform:uppercase;
+  z-index:3;
+  background:rgba(10,10,10,0.7);
+  padding:6px 12px;
+  border-radius:4px;
+  border:1px solid var(--border-strong);
+  backdrop-filter:blur(8px);
+}
+
+.story-eyebrow {
+  display:inline-block;
+  font-family:'Inter';
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:18px;
+  padding:6px 16px;
+  border:1px solid var(--border-strong);
+  border-radius:4px;
+  background:rgba(201,169,97,0.04);
+}
+.story-h {
+  font-family:'Cinzel', serif;
+  font-size:clamp(30px, 4vw, 48px);
+  font-weight:700;
+  letter-spacing:-0.5px;
+  line-height:1.1;
+  color:var(--bone);
+  margin-bottom:24px;
+}
+.story-h em {
+  font-family:'Instrument Serif', serif;
+  font-style:italic;
+  font-weight:400;
+  background:linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.story-body {
+  font-family:'Manrope';
+  font-size:16px;
+  color:#b8b3a7;
+  line-height:1.8;
+}
+.story-body p { margin-bottom:18px; }
+.story-body strong { color:var(--bone); font-weight:700; }
+
+.story-stats {
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:14px;
+  margin-top:30px;
+  padding-top:30px;
+  border-top:1px solid var(--border);
+}
+.ss-item {
+  text-align:left;
+}
+.ss-val {
+  font-family:'Cinzel', serif;
+  font-size:28px;
+  font-weight:700;
+  background:linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  line-height:1;
+}
+.ss-lbl {
+  font-family:'Inter';
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--grey);
+  margin-top:6px;
+}
+
+/* TESTIMONIALS */
+.testi {
+  background:var(--ink);
+  padding:72px 48px;
+  border-bottom:1px solid var(--border);
+  position:relative;
+}
+.testi-inner { max-width:1100px; margin:0 auto; }
+.testi-head { text-align:center; margin-bottom:42px; }
+.testi-head .eyebrow {
+  display:inline-block;
+  font-family:'Inter';
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:14px;
+}
+.testi-head h2 {
+  font-family:'Cinzel', serif;
+  font-size:clamp(26px, 3.5vw, 40px);
+  font-weight:600;
+  letter-spacing:-0.5px;
+  line-height:1.1;
+  color:var(--bone);
+}
+.testi-head h2 em {
+  font-family:'Instrument Serif', serif;
+  font-style:italic;
+  font-weight:400;
+  background:linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.testi-scroller {
+  position:relative;
+  margin-top:40px;
+}
+.testi-grid {
+  display:flex;
+  gap:18px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  padding:12px 4px 20px;
+  -webkit-overflow-scrolling:touch;
+}
+.testi-grid::-webkit-scrollbar { display:none; }
+.testi-grid::after {
+  content:'';
+  flex:0 0 12px;
+}
+.testi-arrow {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:48px; height:48px;
+  border-radius:50%;
+  background:rgba(20,20,20,0.92);
+  border:1px solid var(--border-strong);
+  color:var(--gold);
+  font-family:'Inter';
+  font-size:20px;
+  font-weight:700;
+  cursor:pointer;
+  z-index:5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  box-shadow:0 8px 24px rgba(0,0,0,0.5);
+  transition:all .15s;
+  line-height:1;
+  padding-bottom:2px;
+}
+.testi-arrow:hover {
+  background:rgba(201,169,97,0.18);
+  border-color:var(--gold);
+  color:var(--gold-bright);
+}
+.testi-arrow.left { left:-22px; }
+.testi-arrow.right { right:-22px; }
+.testi-arrow:disabled { opacity:0.25; cursor:not-allowed; }
+.testi-scroller::before,
+.testi-scroller::after {
+  content:'';
+  position:absolute;
+  top:12px; bottom:20px;
+  width:60px;
+  pointer-events:none;
+  z-index:2;
+}
+.testi-scroller::before {
+  left:0;
+  background:linear-gradient(90deg, var(--ink) 0%, transparent 100%);
+}
+.testi-scroller::after {
+  right:0;
+  background:linear-gradient(-90deg, var(--ink) 0%, transparent 100%);
+}
+.testi-card {
+  background:linear-gradient(180deg, var(--coal) 0%, var(--ink) 100%);
+  border:1px solid var(--border-strong);
+  border-radius:8px;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 12px 40px rgba(0,0,0,0.4);
+  flex:0 0 280px;
+  scroll-snap-align:start;
+}
+.testi-video {
+  aspect-ratio:9/16;
+  background:#000;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  overflow:hidden;
+}
+.testi-video video,
+.testi-video iframe {
+  width:100%; height:100%;
+  object-fit:cover;
+  position:absolute; inset:0;
+  border:none;
+  background:#000;
+}
+.testi-video-placeholder {
+  text-align:center;
+  padding:30px;
+}
+.testi-video-placeholder .play {
+  width:64px; height:64px;
+  border-radius:50%;
+  background:rgba(201,169,97,0.15);
+  border:2px solid var(--gold);
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto 14px;
+  color:var(--gold);
+  font-size:24px;
+  box-shadow:0 0 24px rgba(201,169,97,0.3);
+}
+.testi-video-placeholder .lbl {
+  font-family:'Inter';
+  font-size:9px; font-weight:900;
+  letter-spacing:2.5px; text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:4px;
+}
+.testi-video-placeholder .sub {
+  font-family:'Manrope';
+  font-size:11px;
+  color:var(--grey);
+}
+.testi-meta {
+  padding:18px 20px;
+  border-top:1px solid var(--border);
+}
+.testi-name {
+  font-family:'Cinzel', serif;
+  font-size:14px;
+  font-weight:600;
+  color:var(--bone);
+  letter-spacing:1px;
+}
+.testi-result {
+  font-family:'Manrope';
+  font-size:12px;
+  color:var(--gold);
+  margin-top:4px;
+  font-weight:600;
+}
+
+/* INLINE QUIZ CTA CARD */
+.quiz-cta-card {
+  background:linear-gradient(180deg, var(--coal) 0%, var(--ink) 100%);
+  border:1px solid var(--border-strong);
+  border-radius:10px;
+  padding:42px 32px;
+  text-align:center;
+  box-shadow:
+    0 0 0 1px rgba(201,169,97,0.08),
+    0 0 80px rgba(201,169,97,0.15),
+    0 20px 60px rgba(0,0,0,0.5);
+  max-width:560px;
+  margin:0 auto;
+  position:relative;
+  overflow:hidden;
+}
+.quiz-cta-card::before {
+  content:'';
+  position:absolute;
+  top:0; left:0; right:0;
+  height:1px;
+  background:linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+}
+.qcc-icon {
+  width:64px; height:64px;
+  border-radius:50%;
+  background:rgba(201,169,97,0.1);
+  border:1px solid var(--border-strong);
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto 22px;
+  font-size:28px; color:var(--gold);
+  box-shadow:0 0 24px rgba(201,169,97,0.2);
+}
+.quiz-cta-eyebrow {
+  font-family:'Inter';
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:14px;
+}
+.quiz-cta-card h3 {
+  font-family:'Cinzel', serif;
+  font-size:clamp(24px, 3.2vw, 34px);
+  font-weight:600;
+  letter-spacing:-0.5px;
+  color:var(--bone);
+  margin-bottom:14px;
+  line-height:1.15;
+}
+.quiz-cta-card h3 em {
+  font-family:'Instrument Serif', serif;
+  font-style:italic;
+  font-weight:400;
+  background:linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.quiz-cta-card p {
+  font-family:'Manrope';
+  font-size:15px;
+  color:var(--grey);
+  line-height:1.6;
+  max-width:440px;
+  margin:0 auto 28px;
+}
+.quiz-cta-btn {
+  display:inline-block;
+  background:linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+  color:#0a0a0a;
+  font-family:'Inter';
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  padding:20px 44px;
+  border-radius:6px;
+  border:1px solid var(--gold-bright);
+  cursor:pointer;
+  box-shadow:0 8px 28px rgba(201,169,97,0.3);
+  transition:all .2s;
+  text-decoration:none;
+}
+.quiz-cta-btn:hover {
+  transform:translateY(-2px);
+  box-shadow:0 12px 36px rgba(201,169,97,0.5);
+}
+.quiz-cta-meta {
+  margin-top:22px;
+  font-family:'Manrope';
+  font-size:12px;
+  font-weight:600;
+  color:var(--grey);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.quiz-cta-meta .dot-sep { color:var(--border-strong); }
+
+/* FULL-SCREEN MODAL */
+.quiz-modal {
+  position:fixed;
+  inset:0;
+  background:rgba(5,5,5,0.97);
+  backdrop-filter:blur(24px);
+  -webkit-backdrop-filter:blur(24px);
+  z-index:1000;
+  display:none;
+  overflow-y:auto;
+  overflow-x:hidden;
+  padding:60px 20px 40px;
+}
+.quiz-modal.open {
+  display:block;
+  animation:modalFadeIn .25s ease-out;
+}
+@keyframes modalFadeIn {
+  from { opacity:0; backdrop-filter:blur(0); }
+  to   { opacity:1; backdrop-filter:blur(24px); }
+}
+.quiz-modal::before {
+  content:'';
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(201,169,97,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 110%, rgba(201,169,97,0.08) 0%, transparent 55%);
+  pointer-events:none;
+  z-index:-1;
+}
+.quiz-modal-close {
+  position:fixed;
+  top:24px; right:24px;
+  width:48px; height:48px;
+  background:rgba(20,20,20,0.85);
+  border:1px solid var(--border-strong);
+  border-radius:50%;
+  color:var(--gold);
+  font-size:24px;
+  font-family:'Inter', sans-serif;
+  font-weight:300;
+  cursor:pointer;
+  z-index:1001;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:all .2s;
+  line-height:1;
+  padding-bottom:2px;
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+.quiz-modal-close:hover {
+  background:rgba(201,169,97,0.18);
+  border-color:var(--gold);
+  transform:rotate(90deg);
+}
+.quiz-modal-inner {
+  width:100%;
+  max-width:640px;
+  margin:0 auto;
+  position:relative;
+}
+.quiz-modal-head {
+  text-align:center;
+  margin-bottom:28px;
+}
+.qmh-eyebrow {
+  display:inline-block;
+  font-family:'Inter';
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:14px;
+  padding:6px 16px;
+  border:1px solid var(--border-strong);
+  border-radius:4px;
+  background:rgba(201,169,97,0.04);
+}
+.quiz-modal-head h2 {
+  font-family:'Cinzel', serif;
+  font-size:clamp(26px, 3.5vw, 38px);
+  font-weight:600;
+  letter-spacing:-0.5px;
+  line-height:1.1;
+  color:var(--bone);
+}
+.quiz-modal-head h2 em {
+  font-family:'Instrument Serif', serif;
+  font-style:italic;
+  font-weight:400;
+  background:linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+body.modal-open { overflow:hidden; }
+
+/* QUIZ (legacy inline section, now just the CTA wrapper) */
+.quiz-section {
+  background:var(--black);
+  padding:64px 48px;
+  position:relative;
+  z-index:5;
+}
+.quiz-section::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at center, rgba(201,169,97,0.08) 0%, transparent 60%);
+  pointer-events:none;
+}
+.quiz-wrap { max-width:640px; margin:0 auto; position:relative; z-index:5; }
+
+.quiz-head { text-align:center; margin-bottom:36px; }
+.quiz-head .eyebrow {
+  display:inline-block;
+  font-family:'Inter';
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:14px;
+}
+.quiz-head h2 {
+  font-family:'Cinzel', serif;
+  font-size:clamp(26px, 3.5vw, 40px);
+  font-weight:600;
+  letter-spacing:-0.5px;
+  line-height:1.1;
+  color:var(--bone);
+  margin-bottom:14px;
+}
+.quiz-head h2 em {
+  font-family:'Instrument Serif', serif;
+  font-style:italic;
+  font-weight:400;
+  background:linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.quiz-head p {
+  font-family:'Manrope';
+  font-size:15px;
+  color:var(--grey);
+  max-width:480px;
+  margin:0 auto;
+  line-height:1.6;
+}
+
+.quiz-box {
+  background:linear-gradient(180deg, var(--coal) 0%, var(--ink) 100%);
+  border:1px solid var(--border-strong);
+  border-radius:8px;
+  box-shadow:
+    0 0 0 1px rgba(201,169,97,0.08),
+    0 0 80px rgba(201,169,97,0.12),
+    0 20px 60px rgba(0,0,0,0.5);
+  overflow:hidden;
+  position:relative;
+}
+.quiz-box::before {
+  content:'';
+  position:absolute;
+  top:0; left:0; right:0;
+  height:1px;
+  background:linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+}
+
+.qbox-top {
+  background:linear-gradient(90deg, var(--ink) 0%, var(--coal) 100%);
+  padding:14px 22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid var(--border);
+}
+.qbt-l, .qbt-r {
+  font-family:'Inter';
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+.qbt-l { color:var(--grey); }
+.qbt-r { color:var(--gold); }
+
+.q-step { display:none; padding:30px 28px 0; }
+.q-step.active { display:block; }
+
+.drop-label {
+  font-family:'Manrope';
+  font-size:17px;
+  font-weight:600;
+  color:var(--bone);
+  margin-bottom:14px;
+  line-height:1.4;
+}
+.drop-label em {
+  font-family:'Instrument Serif', serif;
+  font-style:italic;
+  color:var(--gold);
+}
+
+.opts { display:flex; flex-direction:column; gap:14px; }
+
+.drop-select {
+  width:100%;
+  border:1.5px solid var(--ash);
+  border-radius:6px;
+  padding:16px 18px;
+  font-family:'Manrope';
+  font-size:15px;
+  font-weight:600;
+  color:var(--bone);
+  background:var(--smoke);
+  outline:none;
+  appearance:none;
+  -webkit-appearance:none;
+  cursor:pointer;
+  transition:border-color .15s, background .15s;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23C9A961' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 16px center;
+  padding-right:44px;
+}
+.drop-select option { background:var(--ink); color:var(--bone); }
+.drop-select:focus { border-color:var(--gold); }
+.drop-select.filled { border-color:var(--gold); background-color:rgba(201,169,97,0.06); }
+
+.radio-list { display:flex; flex-direction:column; gap:10px; }
+.radio-opt {
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 18px;
+  background:var(--smoke);
+  border:1.5px solid var(--ash);
+  border-radius:6px;
+  cursor:pointer;
+  transition:all .15s;
+  font-family:'Manrope';
+  font-size:14px;
+  font-weight:600;
+  color:var(--bone);
+}
+.radio-opt:hover { border-color:var(--gold-deep); background:rgba(201,169,97,0.04); }
+.radio-opt.checked { border-color:var(--gold); background:rgba(201,169,97,0.08); }
+.radio-opt input { display:none; }
+.radio-circ {
+  width:18px; height:18px;
+  border:2px solid var(--ash);
+  border-radius:50%;
+  flex-shrink:0;
+  position:relative;
+  transition:border-color .15s;
+}
+.radio-opt.checked .radio-circ { border-color:var(--gold); }
+.radio-opt.checked .radio-circ::after {
+  content:'';
+  position:absolute;
+  inset:3px;
+  border-radius:50%;
+  background:var(--gold);
+  box-shadow:0 0 6px var(--gold);
+}
+
+.q-prog { padding:22px 28px 0; }
+.pg-bar {
+  height:2px;
+  background:rgba(201,169,97,0.1);
+  border-radius:2px;
+  overflow:hidden;
+}
+.pg-fill {
+  height:100%;
+  background:linear-gradient(90deg, var(--gold-deep) 0%, var(--gold) 100%);
+  border-radius:2px;
+  transition:width .4s;
+  box-shadow:0 0 8px rgba(201,169,97,0.4);
+}
+.pg-note {
+  font-family:'Manrope';
+  font-size:11px;
+  color:var(--grey);
+  margin-top:8px;
+  letter-spacing:0.5px;
+}
+
+.q-action { padding:18px 28px 28px; display:flex; gap:10px; }
+.q-back {
+  background:transparent;
+  color:var(--grey);
+  border:1.5px solid var(--ash);
+  border-radius:6px;
+  padding:17px 22px;
+  font-family:'Inter';
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:all .15s;
+}
+.q-back:hover { border-color:var(--gold-deep); color:var(--gold); }
+.q-btn {
+  flex:1;
+  background:linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+  color:#0a0a0a;
+  border:1px solid var(--gold-bright);
+  border-radius:6px;
+  padding:17px;
+  font-family:'Inter';
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:all .15s;
+  box-shadow:0 6px 20px rgba(201,169,97,0.25);
+}
+.q-btn:hover { transform:translateY(-1px); box-shadow:0 10px 28px rgba(201,169,97,0.4); }
+.q-btn:disabled {
+  background:var(--ash);
+  border-color:var(--ash);
+  color:var(--grey);
+  box-shadow:none;
+  cursor:not-allowed;
+  transform:none;
+}
+
+/* email step */
+.e-step { padding:30px 28px 0; }
+.e-tag {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-family:'Inter';
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:10px;
+}
+.e-tag .pulse-dot {
+  width:6px; height:6px; border-radius:50%;
+  background:var(--gold);
+  box-shadow:0 0 8px var(--gold);
+  animation:pulseGold 1.5s infinite;
+}
+.e-fields { display:flex; flex-direction:column; gap:10px; margin-bottom:6px; }
+.e-in {
+  border:1.5px solid var(--ash);
+  border-radius:6px;
+  padding:15px 18px;
+  font-family:'Manrope';
+  font-size:14px;
+  font-weight:600;
+  color:var(--bone);
+  background:var(--smoke);
+  outline:none;
+  transition:border-color .15s;
+  width:100%;
+}
+.e-in:focus { border-color:var(--gold); }
+.e-in::placeholder { color:#666; font-weight:500; }
+.e-fine {
+  font-family:'Manrope';
+  font-size:11px;
+  color:var(--grey);
+  text-align:center;
+  margin-top:10px;
+  line-height:1.5;
+}
+.email-error {
+  font-family:'Manrope';
+  font-size:12px;
+  color:#e74c3c;
+  margin-top:4px;
+  min-height:16px;
+  opacity:0;
+  transition:opacity .2s;
+}
+.email-error.show { opacity:1; }
+.e-in.error { border-color:#e74c3c; }
+
+/* intl-tel-input dark theme */
+.iti { width:100%; }
+.iti__tel-input { width:100%; }
+.iti--inline-dropdown .iti__dropdown-content {
+  background:var(--ink);
+  border:1px solid var(--border-strong);
+  border-radius:6px;
+  box-shadow:0 12px 32px rgba(0,0,0,0.6);
+}
+.iti__country-list {
+  background:var(--ink) !important;
+  border:1px solid var(--border-strong) !important;
+  color:var(--bone);
+}
+.iti__country {
+  color:var(--bone);
+  padding:8px 12px;
+}
+.iti__country:hover,
+.iti__country.iti__highlight {
+  background:rgba(201,169,97,0.12) !important;
+  color:var(--gold-bright);
+}
+.iti__divider { border-bottom-color:var(--border) !important; }
+.iti__selected-country-primary { background:transparent; }
+.iti__selected-country-primary:hover,
+.iti__selected-country-primary:focus { background:rgba(201,169,97,0.08); }
+.iti__search-input {
+  background:var(--smoke);
+  color:var(--bone);
+  border:none;
+  border-bottom:1px solid var(--border);
+  padding:10px 14px;
+  font-family:'Manrope';
+  outline:none;
+}
+.iti__dial-code { color:var(--grey); }
+
+/* success */
+.quiz-success {
+  display:none;
+  text-align:center;
+  padding:52px 28px;
+}
+.quiz-success.show { display:block; }
+.success-icon {
+  width:72px; height:72px;
+  border-radius:50%;
+  background:linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 100%);
+  color:#0a0a0a;
+  font-family:Inter;
+  font-size:34px;
+  font-weight:900;
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto 22px;
+  animation:pulse 2s infinite;
+  box-shadow:0 10px 30px rgba(201,169,97,0.4);
+}
+@keyframes pulse {
+  0% { transform:scale(1); box-shadow:0 0 0 0 rgba(201,169,97,0.5); }
+  70% { transform:scale(1.05); box-shadow:0 0 0 14px rgba(201,169,97,0); }
+  100% { transform:scale(1); }
+}
+.success-title {
+  font-family:'Cinzel', serif;
+  font-size:26px;
+  font-weight:700;
+  letter-spacing:-0.5px;
+  color:var(--bone);
+  margin-bottom:10px;
+}
+.success-tier {
+  display:inline-block;
+  font-family:'Inter';
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  padding:6px 14px;
+  border-radius:4px;
+  margin-bottom:18px;
+}
+.tier-hot { background:rgba(201,169,97,0.15); border:1px solid var(--gold); color:var(--gold-bright); }
+.tier-warm { background:rgba(201,169,97,0.08); border:1px solid var(--border-strong); color:var(--gold); }
+.tier-cold { background:rgba(255,255,255,0.05); border:1px solid var(--ash); color:var(--grey); }
+.success-msg {
+  font-family:'Manrope';
+  font-size:14px;
+  color:#b8b3a7;
+  line-height:1.7;
+  margin-bottom:20px;
+  max-width:420px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.success-msg strong { color:var(--gold); font-weight:700; }
+.score-display {
+  display:inline-block;
+  background:var(--ink);
+  border:1px solid var(--border-strong);
+  border-radius:6px;
+  padding:10px 18px;
+  margin-bottom:20px;
+}
+.score-display .lbl {
+  font-family:'Inter';
+  font-size:9px; font-weight:900; letter-spacing:2.5px;
+  text-transform:uppercase; color:var(--grey);
+}
+.score-display .val {
+  font-family:'Cinzel', serif;
+  font-size:28px; font-weight:700;
+  color:var(--gold); margin-top:2px;
+}
+.success-cta {
+  display:inline-block;
+  background:linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+  color:#0a0a0a;
+  font-family:'Inter';
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  padding:16px 36px;
+  border-radius:6px;
+  text-decoration:none;
+  box-shadow:0 6px 20px rgba(201,169,97,0.3);
+  transition:all .15s;
+  margin-top:6px;
+}
+.success-cta:hover { transform:translateY(-1px); box-shadow:0 10px 28px rgba(201,169,97,0.5); }
+.success-redirect {
+  font-family:'Manrope';
+  font-size:11px;
+  color:var(--grey);
+  margin-top:18px;
+}
+
+/* URGENCY */
+.urgency {
+  background:var(--ink);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:80px 48px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.urgency::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at 50% 50%, rgba(201,169,97,0.1) 0%, transparent 60%);
+  pointer-events:none;
+}
+.urgency-inner { position:relative; z-index:1; max-width:680px; margin:0 auto; }
+.urg-eyebrow {
+  display:inline-block;
+  font-family:'Inter';
+  font-size:10px; font-weight:900; letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:18px;
+  padding:6px 16px;
+  border:1px solid var(--border-strong);
+  border-radius:4px;
+  background:rgba(201,169,97,0.04);
+}
+.urg-h {
+  font-family:'Cinzel', serif;
+  font-size:clamp(30px, 4vw, 48px);
+  font-weight:700; letter-spacing:-0.5px;
+  color:var(--bone); line-height:1.1;
+  margin-bottom:18px;
+}
+.urg-h em {
+  font-family:'Instrument Serif', serif;
+  font-style:italic; font-weight:400;
+  background:linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 100%);
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.urg-body {
+  font-family:'Manrope';
+  font-size:16px; font-weight:400;
+  color:#b8b3a7; line-height:1.75;
+  margin-bottom:30px;
+}
+.urg-body strong { color:var(--bone); font-weight:700; }
+.countdown {
+  display:flex; justify-content:center;
+  gap:14px; margin-bottom:32px; flex-wrap:wrap;
+}
+.cd-box {
+  background:var(--coal);
+  border:1px solid var(--border-strong);
+  border-radius:6px;
+  padding:14px 18px;
+  min-width:80px;
+}
+.cd-val {
+  font-family:'Cinzel', serif;
+  font-size:32px; font-weight:700;
+  color:var(--gold); line-height:1;
+}
+.cd-lbl {
+  font-family:'Inter';
+  font-size:9px; font-weight:800;
+  letter-spacing:2px; text-transform:uppercase;
+  color:var(--grey); margin-top:6px;
+}
+
+/* FOOTER */
+footer {
+  background:var(--black);
+  border-top:1px solid var(--border);
+  padding:32px 48px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap; gap:14px;
+}
+.footer-logo {
+  font-family:'Cinzel', serif;
+  font-size:14px; font-weight:700;
+  letter-spacing:4px; text-transform:uppercase;
+  color:var(--gold);
+}
+.footer-copy {
+  font-family:'Manrope';
+  font-size:11px; color:var(--grey);
+}
+
+/* MOBILE */
+@media (max-width:768px) {
+  nav { padding:12px 20px; }
+  .nav-pill { display:none; }
+  .nav-logo { font-size:13px; letter-spacing:3px; gap:8px; }
+  .nav-logo img { width:32px; height:32px; }
+  .hero { padding:48px 20px 24px; }
+  .quiz-section, .urgency, .story, .testi { padding:48px 20px; }
+  footer { padding:24px 20px; flex-direction:column; text-align:center; }
+  .hero-meta { gap:14px; }
+  .hm-item { border-right:none; padding:0; }
+  .crest-l { left:-20px; transform:translateY(-50%) rotate(-8deg) scale(0.7); }
+  .crest-r { right:-20px; transform:translateY(-50%) rotate(8deg) scale(0.7); }
+  .countdown { gap:8px; }
+  .cd-box { min-width:64px; padding:10px 12px; }
+  .cd-val { font-size:24px; }
+  .quiz-modal { padding:80px 14px 30px; }
+  .quiz-modal-close { top:16px; right:16px; width:42px; height:42px; }
+  .quiz-cta-card { padding:32px 22px; }
+  .quiz-cta-meta { font-size:11px; gap:6px; }
+  .story-inner { grid-template-columns:1fr; gap:36px; }
+  .story-visual { max-width:380px; margin:0 auto; width:100%; }
+  .testi-grid { padding:8px 0 16px; gap:12px; }
+  .testi-card { flex:0 0 240px; }
+  .testi-arrow { display:none; }
+  .testi-scroller::before,
+  .testi-scroller::after { width:30px; }
+  .story-stats { grid-template-columns:1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT -->
+<div class="ann">
+  <p>⚜ Live Webinar · July 1st · <strong>Only 100 Seats Available</strong> · Spaces Filling Fast</p>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <img src="king-logo.png" alt="King Azoulay">
+    <span>King Azoulay</span>
+  </div>
+  <div class="nav-pill"><strong>2,143 souls</strong> registered in the last 14 days</div>
+  <a href="#quiz" class="nav-btn">Claim Your Seat</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      Free Live Training · July 1st
+    </div>
+    <h1 class="hero-h1">
+      Upgrade Your Life, Your Wealth<br>
+      &amp; Your <em>Walk With God</em>
+    </h1>
+    <p class="hero-sub">
+      A once in a life time opportunity for men and women who refuse to settle for average. Discover the <strong>3-pillar system</strong> King Azoulay uses to elevate your finances, sharpen your spirit, and reclaim the life you were destined to live.
+    </p>
+    <div class="hero-visual">
+      <div class="crest-l">
+        <div class="crest-sym">⚜</div>
+        <div class="crest-lbl">Wealth</div>
+        <div class="crest-sub">Financial Mastery</div>
+      </div>
+      <div class="portrait-frame">
+        <img src="king-hero.jpeg" alt="King Azoulay" onerror="this.style.display='none'">
+        <div class="portrait-init">K</div>
+        <div class="portrait-name">King Azoulay</div>
+      </div>
+      <div class="crest-r">
+        <div class="crest-sym">✡</div>
+        <div class="crest-lbl">Faith</div>
+        <div class="crest-sub">Walk With God</div>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <div class="hm-item">
+        <div class="hm-icon">📅</div>
+        <div class="hm-txt">
+          <div class="hm-label">When</div>
+          <div class="hm-val">July 1st · 7PM EST</div>
+        </div>
+      </div>
+      <div class="hm-item">
+        <div class="hm-icon">⏱</div>
+        <div class="hm-txt">
+          <div class="hm-label">Duration</div>
+          <div class="hm-val">90 Minutes Live</div>
+        </div>
+      </div>
+      <div class="hm-item">
+        <div class="hm-icon">🎟</div>
+        <div class="hm-txt">
+          <div class="hm-label">Investment</div>
+          <div class="hm-val">100% Free</div>
+        </div>
+      </div>
+    </div>
+    <a href="#quiz" class="hero-cta">Reserve My Seat →</a>
+    <div class="hero-trust">
+      <span class="stars">★★★★★</span>
+      <span>4.9 / 5 — based on 2,143 attendees</span>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="t-item"><span class="dot"></span>Wealth Activation</div>
+    <div class="t-item"><span class="dot"></span>Spiritual Awakening</div>
+    <div class="t-item"><span class="dot"></span>Financial Sovereignty</div>
+    <div class="t-item"><span class="dot"></span>Divine Alignment</div>
+    <div class="t-item"><span class="dot"></span>Inner Power</div>
+    <div class="t-item"><span class="dot"></span>Walk With God</div>
+    <div class="t-item"><span class="dot"></span>Wealth Activation</div>
+    <div class="t-item"><span class="dot"></span>Spiritual Awakening</div>
+    <div class="t-item"><span class="dot"></span>Financial Sovereignty</div>
+    <div class="t-item"><span class="dot"></span>Divine Alignment</div>
+    <div class="t-item"><span class="dot"></span>Inner Power</div>
+    <div class="t-item"><span class="dot"></span>Walk With God</div>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="story-inner">
+
+    <div class="story-visual">
+      <div class="story-corner">⚜ The King</div>
+      <img src="king-portrait.png" alt="King Azoulay" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="story-placeholder" style="display:none;">
+        <div class="icon">⚜</div>
+        <div class="lbl">King Azoulay</div>
+        <div class="sub">Save your portrait as<br><code style="font-size:11px;color:var(--gold);">king-portrait.png</code><br>in your Downloads folder</div>
+      </div>
+    </div>
+
+    <div class="story-text">
+      <div class="story-eyebrow">⚜ Why They Call Him King</div>
+      <h2 class="story-h">He didn't get handed the crown. He <em>built it.</em></h2>
+      <div class="story-body">
+        <p>
+          <strong>King Azoulay built his kingdom with his own two hands.</strong> No connections, no inheritance, no easy road — just the work, the grind, and a belief most people would call crazy. He's been backing up that belief every single day since, and you can see the receipts all over the world.
+        </p>
+        <p>
+          Over the years, King has helped <strong>millions of men and women completely transform their lives</strong>. We're not talking about small wins or motivational bullsh*t. We're talking real results — the kind that have never been seen before in this space. The kind that change families for generations. Because nobody does this the way he does it.
+        </p>
+        <p>
+          He's the best at what he does. That's not hype, that's just the truth — and on <strong>July 1st</strong>, you're going to see exactly why. The same system he runs with his private clients — the one that's built businesses, restored faith, and reshaped lives across the globe — is the one he's going to break down for you, live, step by step.
+        </p>
+      </div>
+
+      <div class="story-stats">
+        <div class="ss-item">
+          <div class="ss-val">10+</div>
+          <div class="ss-lbl">Years Teaching</div>
+        </div>
+        <div class="ss-item">
+          <div class="ss-val">15K+</div>
+          <div class="ss-lbl">Lives Changed</div>
+        </div>
+        <div class="ss-item">
+          <div class="ss-val">$1B+</div>
+          <div class="ss-lbl">Generated For Clients</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT TESTIMONIALS -->
+<section class="testi">
+  <div class="testi-inner">
+    <div class="testi-head">
+      <div class="eyebrow">⚜ Witnesses Of The Path</div>
+      <h2>Real men. Real women. <em>Real transformation.</em></h2>
+    </div>
+    <div class="testi-scroller">
+      <button class="testi-arrow left" id="testiPrev" aria-label="Previous testimonials">‹</button>
+      <button class="testi-arrow right" id="testiNext" aria-label="Next testimonials">›</button>
+      <div class="testi-grid" id="testiGrid">
+
+        <div class="testi-card">
+          <div class="testi-video">
+            <video src="client-1.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="testi-meta">
+            <div class="testi-name">Client 1</div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-video">
+            <video src="client-2.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="testi-meta">
+            <div class="testi-name">Client 2</div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-video">
+            <video src="client-3.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="testi-meta">
+            <div class="testi-name">Client 3</div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-video">
+            <video src="client-4.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="testi-meta">
+            <div class="testi-name">Client 4</div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-video">
+            <video src="client-5.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="testi-meta">
+            <div class="testi-name">Client 5</div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-video">
+            <video src="client-6.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="testi-meta">
+            <div class="testi-name">Client 6</div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-video">
+            <video src="client-7.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="testi-meta">
+            <div class="testi-name">Client 7</div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-video">
+            <video src="client-8.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="testi-meta">
+            <div class="testi-name">Client 8</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="quiz-section" id="quiz">
+  <div class="quiz-wrap">
+
+    <div class="quiz-cta-card">
+      <div class="qcc-icon">⚜</div>
+      <div class="quiz-cta-eyebrow">⚜ Qualification Required</div>
+      <h3>Is this <em>your moment</em> to rise?</h3>
+      <p>Enter your details and answer 8 short questions so we can determine if this webinar is the right fit for your current season — and reserve your seat.</p>
+      <button class="quiz-cta-btn" onclick="openQuiz()">Begin Qualification →</button>
+      <div class="quiz-cta-meta">
+        <span>⏱ 90 seconds</span>
+        <span class="dot-sep">·</span>
+        <span>🔒 100% private</span>
+        <span class="dot-sep">·</span>
+        <span>🎟 Free seat</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FULL-SCREEN REGISTRATION MODAL -->
+<div class="quiz-modal" id="quizModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <button class="quiz-modal-close" onclick="closeQuiz()" aria-label="Close registration">×</button>
+  <div class="quiz-modal-inner">
+    <div class="quiz-modal-head">
+      <div class="qmh-eyebrow">⚜ King's Qualification · 9 Steps</div>
+      <h2 id="modalTitle">Claim Your <em>July 1st</em> seat</h2>
+    </div>
+
+    <div class="quiz-box" id="quizBox">
+
+      <div class="qbox-top">
+        <div class="qbt-l">King's Qualification</div>
+        <div class="qbt-r" id="stepCounter">Step 1 of 9</div>
+      </div>
+
+      <!-- STEP 1: INCOME -->
+      <div class="q-step" id="step2">
+        <div class="opts">
+          <div>
+            <div class="drop-label">What does your <em>current financial reality</em> look like?</div>
+            <select class="drop-select" id="sel1" onchange="onSel(1)">
+              <option value="" disabled selected>Select your monthly income</option>
+              <option value="0">Less than $3K / month</option>
+              <option value="1">$3K – $10K / month</option>
+              <option value="2">$10K – $30K / month</option>
+              <option value="3">$30K – $100K / month</option>
+              <option value="4">$100K+ / month</option>
+            </select>
+          </div>
+        </div>
+        <div class="q-prog">
+          <div class="pg-bar"><div class="pg-fill" style="width:22%;"></div></div>
+          <div class="pg-note">Step 2 of 9 — first question</div>
+        </div>
+        <div class="q-action">
+          <button class="q-back" onclick="goStep(1)">← Back</button>
+          <button class="q-btn" id="btn1" disabled onclick="goStep(3)">Next →</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: FAITH -->
+      <div class="q-step" id="step3">
+        <div class="opts">
+          <div>
+            <div class="drop-label">Where are you in your <em>walk with God</em>?</div>
+            <div class="radio-list" data-q="2">
+              <label class="radio-opt" data-val="0">
+                <input type="radio" name="q2"><div class="radio-circ"></div>
+                <span>I don't believe — but I'm curious</span>
+              </label>
+              <label class="radio-opt" data-val="1">
+                <input type="radio" name="q2"><div class="radio-circ"></div>
+                <span>I believe but feel disconnected</span>
+              </label>
+              <label class="radio-opt" data-val="2">
+                <input type="radio" name="q2"><div class="radio-circ"></div>
+                <span>I pray sometimes but want a deeper bond</span>
+              </label>
+              <label class="radio-opt" data-val="3">
+                <input type="radio" name="q2"><div class="radio-circ"></div>
+                <span>I walk with Him daily and want to go deeper</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="q-prog">
+          <div class="pg-bar"><div class="pg-fill" style="width:33%;"></div></div>
+          <div class="pg-note">Step 3 of 9</div>
+        </div>
+        <div class="q-action">
+          <button class="q-back" onclick="goStep(2)">← Back</button>
+          <button class="q-btn" id="btn2" disabled onclick="goStep(4)">Next →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: AREA TO UPGRADE -->
+      <div class="q-step" id="step4">
+        <div class="opts">
+          <div>
+            <div class="drop-label">Which area of your life needs the <em>biggest upgrade</em>?</div>
+            <div class="radio-list" data-q="3">
+              <label class="radio-opt" data-val="0">
+                <input type="radio" name="q3"><div class="radio-circ"></div>
+                <span>My finances — I need to multiply my income</span>
+              </label>
+              <label class="radio-opt" data-val="1">
+                <input type="radio" name="q3"><div class="radio-circ"></div>
+                <span>My spirit — I need to reconnect with God</span>
+              </label>
+              <label class="radio-opt" data-val="2">
+                <input type="radio" name="q3"><div class="radio-circ"></div>
+                <span>My discipline — I need to become the man/woman I'm meant to be</span>
+              </label>
+              <label class="radio-opt" data-val="3">
+                <input type="radio" name="q3"><div class="radio-circ"></div>
+                <span>All of it — I need a complete reset</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="q-prog">
+          <div class="pg-bar"><div class="pg-fill" style="width:44%;"></div></div>
+          <div class="pg-note">Step 4 of 9</div>
+        </div>
+        <div class="q-action">
+          <button class="q-back" onclick="goStep(3)">← Back</button>
+          <button class="q-btn" id="btn3" disabled onclick="goStep(5)">Next →</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: BIGGEST OBSTACLE -->
+      <div class="q-step" id="step5">
+        <div class="opts">
+          <div>
+            <div class="drop-label">What's the <em>biggest obstacle</em> holding you back right now?</div>
+            <div class="radio-list" data-q="4">
+              <label class="radio-opt" data-val="0">
+                <input type="radio" name="q4"><div class="radio-circ"></div>
+                <span>My mindset — I doubt myself constantly</span>
+              </label>
+              <label class="radio-opt" data-val="1">
+                <input type="radio" name="q4"><div class="radio-circ"></div>
+                <span>Money — I don't have the resources to start</span>
+              </label>
+              <label class="radio-opt" data-val="2">
+                <input type="radio" name="q4"><div class="radio-circ"></div>
+                <span>No clear path — I don't know what to do next</span>
+              </label>
+              <label class="radio-opt" data-val="3">
+                <input type="radio" name="q4"><div class="radio-circ"></div>
+                <span>Discipline — I know what to do but can't stay consistent</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="q-prog">
+          <div class="pg-bar"><div class="pg-fill" style="width:55%;"></div></div>
+          <div class="pg-note">Step 5 of 9</div>
+        </div>
+        <div class="q-action">
+          <button class="q-back" onclick="goStep(4)">← Back</button>
+          <button class="q-btn" id="btn4" disabled onclick="goStep(6)">Next →</button>
+        </div>
+      </div>
+
+      <!-- STEP 5: INVESTMENT HISTORY -->
+      <div class="q-step" id="step6">
+        <div class="opts">
+          <div>
+            <div class="drop-label">Have you ever <em>invested in yourself</em> to grow before?</div>
+            <div class="radio-list" data-q="5">
+              <label class="radio-opt" data-val="0">
+                <input type="radio" name="q5"><div class="radio-circ"></div>
+                <span>No — this would be my first time</span>
+              </label>
+              <label class="radio-opt" data-val="1">
+                <input type="radio" name="q5"><div class="radio-circ"></div>
+                <span>Books, podcasts, free content only</span>
+              </label>
+              <label class="radio-opt" data-val="2">
+                <input type="radio" name="q5"><div class="radio-circ"></div>
+                <span>Yes — I've bought courses or programs</span>
+              </label>
+              <label class="radio-opt" data-val="3">
+                <input type="radio" name="q5"><div class="radio-circ"></div>
+                <span>Yes — I've worked with coaches or mentors</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="q-prog">
+          <div class="pg-bar"><div class="pg-fill" style="width:66%;"></div></div>
+          <div class="pg-note">Step 6 of 9</div>
+        </div>
+        <div class="q-action">
+          <button class="q-back" onclick="goStep(5)">← Back</button>
+          <button class="q-btn" id="btn5" disabled onclick="goStep(7)">Next →</button>
+        </div>
+      </div>
+
+      <!-- STEP 6: COMMITMENT / WORTH -->
+      <div class="q-step" id="step7">
+        <div class="opts">
+          <div>
+            <div class="drop-label">If your life was <em>completely transformed</em> in 12 months — what would that be worth to you?</div>
+            <div class="radio-list" data-q="6">
+              <label class="radio-opt" data-val="0">
+                <input type="radio" name="q6"><div class="radio-circ"></div>
+                <span>I'm not sure yet</span>
+              </label>
+              <label class="radio-opt" data-val="1">
+                <input type="radio" name="q6"><div class="radio-circ"></div>
+                <span>Something — but not a huge investment</span>
+              </label>
+              <label class="radio-opt" data-val="2">
+                <input type="radio" name="q6"><div class="radio-circ"></div>
+                <span>A lot — I'd invest seriously in the right path</span>
+              </label>
+              <label class="radio-opt" data-val="3">
+                <input type="radio" name="q6"><div class="radio-circ"></div>
+                <span>Everything — it would change my entire bloodline</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="q-prog">
+          <div class="pg-bar"><div class="pg-fill" style="width:77%;"></div></div>
+          <div class="pg-note">Step 7 of 9</div>
+        </div>
+        <div class="q-action">
+          <button class="q-back" onclick="goStep(6)">← Back</button>
+          <button class="q-btn" id="btn6" disabled onclick="goStep(8)">Next →</button>
+        </div>
+      </div>
+
+      <!-- STEP 7: URGENCY -->
+      <div class="q-step" id="step8">
+        <div class="opts">
+          <div>
+            <div class="drop-label">How <em>serious</em> are you about taking action in the next 90 days?</div>
+            <div class="radio-list" data-q="7">
+              <label class="radio-opt" data-val="0">
+                <input type="radio" name="q7"><div class="radio-circ"></div>
+                <span>Just exploring — no real urgency</span>
+              </label>
+              <label class="radio-opt" data-val="1">
+                <input type="radio" name="q7"><div class="radio-circ"></div>
+                <span>Open to change if the right path appears</span>
+              </label>
+              <label class="radio-opt" data-val="2">
+                <input type="radio" name="q7"><div class="radio-circ"></div>
+                <span>Ready to act and willing to do the work</span>
+              </label>
+              <label class="radio-opt" data-val="3">
+                <input type="radio" name="q7"><div class="radio-circ"></div>
+                <span>All in — I'll do whatever it takes, starting today</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="q-prog">
+          <div class="pg-bar"><div class="pg-fill" style="width:88%;"></div></div>
+          <div class="pg-note">Step 8 of 9</div>
+        </div>
+        <div class="q-action">
+          <button class="q-back" onclick="goStep(7)">← Back</button>
+          <button class="q-btn" id="btn7" disabled onclick="goStep(9)">Next →</button>
+        </div>
+      </div>
+
+      <!-- STEP 8: AGE -->
+      <div class="q-step" id="step9">
+        <div class="opts">
+          <div>
+            <div class="drop-label">One last thing — what's your <em>age range</em>?</div>
+            <div class="radio-list" data-q="8">
+              <label class="radio-opt" data-val="0">
+                <input type="radio" name="q8"><div class="radio-circ"></div>
+                <span>Under 25</span>
+              </label>
+              <label class="radio-opt" data-val="1">
+                <input type="radio" name="q8"><div class="radio-circ"></div>
+                <span>25 – 34</span>
+              </label>
+              <label class="radio-opt" data-val="2">
+                <input type="radio" name="q8"><div class="radio-circ"></div>
+                <span>35 – 44</span>
+              </label>
+              <label class="radio-opt" data-val="3">
+                <input type="radio" name="q8"><div class="radio-circ"></div>
+                <span>45 – 54</span>
+              </label>
+              <label class="radio-opt" data-val="4">
+                <input type="radio" name="q8"><div class="radio-circ"></div>
+                <span>55+</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="q-prog">
+          <div class="pg-bar"><div class="pg-fill" style="width:100%;"></div></div>
+          <div class="pg-note">Final question — your seat awaits</div>
+        </div>
+        <div class="q-action">
+          <button class="q-back" onclick="goStep(8)">← Back</button>
+          <button class="q-btn" id="btn8" disabled onclick="submitForm()">Confirm My Seat →</button>
+        </div>
+      </div>
+
+      <!-- STEP 1: CONTACT (always first) -->
+      <div class="q-step active" id="step1">
+        <div class="e-step">
+          <div class="e-tag"><span class="pulse-dot"></span>Where Should We Send The Link?</div>
+          <div class="drop-label">Your <em>details first</em> — so we never lose touch.</div>
+          <div class="e-fields">
+            <input class="e-in" type="text" id="fname" placeholder="First name">
+            <input class="e-in" type="email" id="femail" placeholder="Email address">
+            <input class="e-in" type="tel" id="fphone" placeholder="Phone (for SMS reminder)">
+            <div class="email-error" id="emailErr"></div>
+          </div>
+          <div class="e-fine">
+            🔒 Your details are sacred. No spam — just your webinar link and reminders before July 1st.
+          </div>
+        </div>
+        <div class="q-prog">
+          <div class="pg-bar"><div class="pg-fill" style="width:11%;"></div></div>
+          <div class="pg-note">Step 1 of 9 — your details</div>
+        </div>
+        <div class="q-action" style="padding-top:18px;">
+          <button class="q-btn" id="btnContact" onclick="validateContact()">Next →</button>
+        </div>
+      </div>
+
+      <!-- SUCCESS -->
+      <div class="quiz-success" id="quizSuccess">
+        <div class="success-icon">✓</div>
+        <div class="success-title" id="successTitle">Your Seat Is Confirmed</div>
+        <div class="success-tier" id="successTier">QUALIFIED</div>
+        <div class="score-display">
+          <div class="lbl">Your Alignment Score</div>
+          <div class="val" id="scoreVal">—</div>
+        </div>
+        <div class="success-msg" id="successMsg">
+          Check your inbox for the live webinar link.<br>
+          Mark your calendar for <strong>July 1st · 7PM EST</strong>.
+        </div>
+        <a href="#" class="success-cta" id="successCta">Continue →</a>
+        <div class="success-redirect" id="successRedirect">
+          You'll be redirected automatically in <span id="redirectSecs">5</span> seconds...
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /quiz-modal -->
+
+<!-- URGENCY / FINAL -->
+<section class="urgency">
+  <div class="urgency-inner">
+    <div class="urg-eyebrow">⚜ Time Is Running Out</div>
+    <h1 class="urg-h">The doors close <em>July 1st</em></h1>
+    <p class="urg-body">
+      Only <strong>100 seats</strong> are made available for each live broadcast. Once they're claimed, the room is sealed. Don't let another season pass watching others rise without you.
+    </p>
+    <div class="countdown" id="countdown">
+      <div class="cd-box"><div class="cd-val" id="cdDays">—</div><div class="cd-lbl">Days</div></div>
+      <div class="cd-box"><div class="cd-val" id="cdHrs">—</div><div class="cd-lbl">Hours</div></div>
+      <div class="cd-box"><div class="cd-val" id="cdMins">—</div><div class="cd-lbl">Mins</div></div>
+      <div class="cd-box"><div class="cd-val" id="cdSecs">—</div><div class="cd-lbl">Secs</div></div>
+    </div>
+    <a href="#quiz" class="hero-cta">Reserve My Seat Now →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">King Azoulay</div>
+  <div class="footer-copy">© 2026 King Azoulay. All rights reserved.</div>
+</footer>
+
+<script>
+// ─────────────────────────────────────────────
+// CONFIG: Drop in your redirect link here
+// ─────────────────────────────────────────────
+const REDIRECT_URL = 'https://example.com/webinar-confirmed'; // TODO: replace with real webinar / calendar / thank-you link
+const REDIRECT_DELAY_SECONDS = 5;
+// ─────────────────────────────────────────────
+
+const TOTAL_STEPS = 9;
+let answers = { q1:null, q2:null, q3:null, q4:null, q5:null, q6:null, q7:null, q8:null };
+let contactValidated = false;
+
+// Initialize intl-tel-input with country selector on phone field
+let phoneIti = null;
+window.addEventListener('DOMContentLoaded', () => {
+  const phoneInput = document.getElementById('fphone');
+  if (phoneInput && window.intlTelInput) {
+    phoneIti = window.intlTelInput(phoneInput, {
+      initialCountry: 'auto',
+      geoIpLookup: callback => {
+        fetch('https://ipapi.co/json/')
+          .then(r => r.json())
+          .then(d => callback(d.country_code || 'us'))
+          .catch(() => callback('us'));
+      },
+      preferredCountries: ['us', 'gb', 'ca', 'au', 'il'],
+      separateDialCode: true,
+      utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/utils.js'
+    });
+  }
+});
+
+function onSel(n) {
+  const sel = document.getElementById('sel' + n);
+  const btn = document.getElementById('btn' + n);
+  if (sel.value !== '') {
+    sel.classList.add('filled');
+    btn.disabled = false;
+    answers['q' + n] = parseInt(sel.value);
+  }
+}
+
+// bind radio handlers for steps 2-7
+document.querySelectorAll('.radio-list').forEach(rl => {
+  const qNum = rl.dataset.q;
+  rl.querySelectorAll('.radio-opt').forEach(opt => {
+    opt.addEventListener('click', () => {
+      rl.querySelectorAll('.radio-opt').forEach(o => o.classList.remove('checked'));
+      opt.classList.add('checked');
+      answers['q' + qNum] = parseInt(opt.dataset.val);
+      const btn = document.getElementById('btn' + qNum);
+      if (btn) btn.disabled = false;
+    });
+  });
+});
+
+function goStep(n) {
+  document.querySelectorAll('.q-step').forEach(s => s.classList.remove('active'));
+  document.getElementById('step' + n).classList.add('active');
+  const counter = document.getElementById('stepCounter');
+  if (n <= TOTAL_STEPS) {
+    counter.textContent = 'Step ' + n + ' of ' + TOTAL_STEPS;
+  } else {
+    counter.textContent = 'Final Step';
+  }
+  // scroll modal to top so user always sees the new question
+  const modal = document.getElementById('quizModal');
+  if (modal && modal.classList.contains('open')) {
+    modal.scrollTo({ top:0, behavior:'smooth' });
+  }
+}
+
+// ──────────────────────────────
+// FULL-SCREEN MODAL
+// ──────────────────────────────
+function openQuiz() {
+  const modal = document.getElementById('quizModal');
+  modal.classList.add('open');
+  document.body.classList.add('modal-open');
+}
+function closeQuiz() {
+  const modal = document.getElementById('quizModal');
+  modal.classList.remove('open');
+  document.body.classList.remove('modal-open');
+}
+// ESC closes modal
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    const modal = document.getElementById('quizModal');
+    if (modal && modal.classList.contains('open')) closeQuiz();
+  }
+});
+// Intercept ALL #quiz anchor clicks → open modal instead of scroll
+document.querySelectorAll('a[href="#quiz"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    openQuiz();
+  });
+});
+
+function calcScore() {
+  // Weighted lead scoring (max ~100)
+  // Q1 Income — financial fit for downstream offers
+  const q1 = [3, 10, 16, 20, 22][answers.q1] || 0;
+  // Q2 Spiritual state — peak at the seeker / disconnected believer
+  const q2 = [6, 12, 15, 13][answers.q2] || 0;
+  // Q3 Area to upgrade — "all of it" signals biggest pain
+  const q3 = [4, 4, 4, 7][answers.q3] || 0;
+  // Q4 Obstacle — "no clear path" + "discipline" = coachable
+  const q4 = [4, 3, 6, 6][answers.q4] || 0;
+  // Q5 Investment history — strong buyer signal
+  const q5 = [4, 6, 10, 14][answers.q5] || 0;
+  // Q6 Commitment/worth — what they're willing to invest
+  const q6 = [3, 7, 13, 18][answers.q6] || 0;
+  // Q7 Urgency — readiness to act in 90 days
+  const q7 = [3, 8, 16, 22][answers.q7] || 0;
+  // Q8 Age — prime acquisition demographic for wealth+faith offer
+  // Under 25 / 25-34 / 35-44 / 45-54 / 55+
+  const q8 = [8, 18, 20, 16, 10][answers.q8] || 0;
+
+  return Math.min(100, q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8);
+}
+
+function tier(score) {
+  if (score >= 75) return { label:'CHOSEN · PRIORITY SEAT', cls:'tier-hot',
+    msg: 'You\'re exactly who this webinar is built for. <strong>Expect a personal call from the King\'s team</strong> within 48 hours.' };
+  if (score >= 50) return { label:'QUALIFIED', cls:'tier-warm',
+    msg: 'You\'re ready for what\'s coming. Show up live on <strong>July 1st</strong> and bring a notebook — this will change the trajectory of your year.' };
+  return { label:'INVITED', cls:'tier-cold',
+    msg: 'Your seat is saved. Come with an open heart on <strong>July 1st</strong> — the King speaks to anyone willing to listen.' };
+}
+
+function validateContact() {
+  const fname = document.getElementById('fname').value.trim();
+  const femail = document.getElementById('femail').value.trim();
+  const err = document.getElementById('emailErr');
+  const emailEl = document.getElementById('femail');
+
+  if (!fname) {
+    err.textContent = 'Please enter your first name.';
+    err.classList.add('show');
+    return;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(femail)) {
+    err.textContent = 'Please enter a valid email address.';
+    err.classList.add('show');
+    emailEl.classList.add('error');
+    return;
+  }
+  err.classList.remove('show');
+  emailEl.classList.remove('error');
+  contactValidated = true;
+  goStep(2);
+}
+
+function submitForm() {
+  const fname = document.getElementById('fname').value.trim();
+  const femail = document.getElementById('femail').value.trim();
+  // Get E.164 international format from intl-tel-input (e.g. "+14155551234")
+  const fphone = phoneIti ? phoneIti.getNumber() : document.getElementById('fphone').value.trim();
+  const fphoneCountry = phoneIti && phoneIti.getSelectedCountryData ? phoneIti.getSelectedCountryData().iso2 : null;
+  const err = document.getElementById('emailErr');
+  const emailEl = document.getElementById('femail');
+
+  // Defensive re-validation in case user edited contact on a back-step
+  if (!fname) {
+    err.textContent = 'Please go back to step 1 and enter your name.';
+    err.classList.add('show');
+    goStep(1);
+    return;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(femail)) {
+    err.textContent = 'Please go back to step 1 and enter a valid email.';
+    err.classList.add('show');
+    emailEl.classList.add('error');
+    goStep(1);
+    return;
+  }
+  err.classList.remove('show');
+  emailEl.classList.remove('error');
+
+  const score = calcScore();
+  const t = tier(score);
+
+  // payload for backend (CRM / email automation)
+  const payload = {
+    firstName: fname,
+    email: femail,
+    phone: fphone,
+    phoneCountry: fphoneCountry,
+    answers: answers,
+    leadScore: score,
+    tier: t.label,
+    webinarDate: '2026-07-01T19:00:00-04:00',
+    submittedAt: new Date().toISOString()
+  };
+  console.log('LEAD PAYLOAD →', payload);
+
+  // TODO: post to backend
+  // fetch('/api/webinar/register', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload) });
+
+  // hide quiz steps + show success
+  document.querySelectorAll('.q-step').forEach(s => s.classList.remove('active'));
+  document.querySelector('.qbox-top').style.display = 'none';
+  const succ = document.getElementById('quizSuccess');
+  succ.classList.add('show');
+
+  document.getElementById('successTitle').innerHTML = 'Welcome, ' + fname.split(' ')[0] + '.';
+  document.getElementById('scoreVal').textContent = score + ' / 100';
+  const tierEl = document.getElementById('successTier');
+  tierEl.textContent = t.label;
+  tierEl.className = 'success-tier ' + t.cls;
+  document.getElementById('successMsg').innerHTML = t.msg + '<br><br>Check <strong>' + femail + '</strong> for your access link.';
+
+  // wire CTA + auto-redirect
+  const ctaBtn = document.getElementById('successCta');
+  ctaBtn.href = REDIRECT_URL;
+  ctaBtn.textContent = 'Access The Webinar →';
+
+  let remaining = REDIRECT_DELAY_SECONDS;
+  const rsEl = document.getElementById('redirectSecs');
+  rsEl.textContent = remaining;
+  const tick = setInterval(() => {
+    remaining--;
+    rsEl.textContent = remaining;
+    if (remaining <= 0) {
+      clearInterval(tick);
+      window.location.href = REDIRECT_URL;
+    }
+  }, 1000);
+}
+
+// ──────────────────────────────
+// TESTIMONIAL CAROUSEL
+// ──────────────────────────────
+(function() {
+  const grid = document.getElementById('testiGrid');
+  const prev = document.getElementById('testiPrev');
+  const next = document.getElementById('testiNext');
+  if (!grid || !prev || !next) return;
+
+  function scrollAmount() {
+    const card = grid.querySelector('.testi-card');
+    if (!card) return 300;
+    const gap = parseInt(getComputedStyle(grid).gap) || 18;
+    return card.getBoundingClientRect().width + gap;
+  }
+  function updateArrows() {
+    const max = grid.scrollWidth - grid.clientWidth - 4;
+    prev.disabled = grid.scrollLeft <= 4;
+    next.disabled = grid.scrollLeft >= max;
+  }
+  prev.addEventListener('click', () => {
+    grid.scrollBy({ left: -scrollAmount(), behavior:'smooth' });
+  });
+  next.addEventListener('click', () => {
+    grid.scrollBy({ left:  scrollAmount(), behavior:'smooth' });
+  });
+  grid.addEventListener('scroll', updateArrows, { passive:true });
+  window.addEventListener('resize', updateArrows);
+  updateArrows();
+
+  // Pause other videos when one starts playing
+  grid.querySelectorAll('video').forEach(v => {
+    v.addEventListener('play', () => {
+      grid.querySelectorAll('video').forEach(other => {
+        if (other !== v) other.pause();
+      });
+    });
+  });
+})();
+
+// COUNTDOWN
+const webinarTime = new Date('2026-07-01T19:00:00-04:00').getTime();
+function updateCountdown() {
+  const now = Date.now();
+  const diff = webinarTime - now;
+  if (diff <= 0) {
+    ['cdDays','cdHrs','cdMins','cdSecs'].forEach(id => document.getElementById(id).textContent = '0');
+    return;
+  }
+  const d = Math.floor(diff / 86400000);
+  const h = Math.floor((diff % 86400000) / 3600000);
+  const m = Math.floor((diff % 3600000) / 60000);
+  const s = Math.floor((diff % 60000) / 1000);
+  document.getElementById('cdDays').textContent = d;
+  document.getElementById('cdHrs').textContent = String(h).padStart(2,'0');
+  document.getElementById('cdMins').textContent = String(m).padStart(2,'0');
+  document.getElementById('cdSecs').textContent = String(s).padStart(2,'0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+</body>
+</html>
