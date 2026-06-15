@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>King Azoulay — Upgrade Your Life, Wealth & Walk With God</title>
+<title>King Azoulay — Upgrade Your Character · Earn Your 5 Stars</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;700&family=Cinzel:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.min.css">
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
@@ -284,9 +284,8 @@ nav {
 .hero-visual {
   position:relative;
   width:100%;
-  max-width:640px;
-  margin:0 auto 30px;
-  height:400px;
+  max-width:340px;
+  margin:0 auto 24px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -356,6 +355,59 @@ nav {
   z-index:4;
   text-shadow:0 1px 4px rgba(0,0,0,0.8);
 }
+/* 5-STAR ROW (the 5 F's) */
+.stars-row {
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  margin:8px auto 36px;
+  max-width:880px;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:2;
+}
+.star-card {
+  background:linear-gradient(180deg, var(--coal) 0%, var(--ink) 100%);
+  border:1px solid var(--border-strong);
+  border-radius:8px;
+  padding:18px 16px 14px;
+  min-width:130px;
+  flex:1 1 130px;
+  max-width:160px;
+  text-align:center;
+  position:relative;
+  box-shadow:0 8px 24px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,169,97,0.06);
+  transition:all .2s;
+}
+.star-card:hover {
+  transform:translateY(-2px);
+  border-color:var(--gold);
+  box-shadow:0 12px 32px rgba(201,169,97,0.2), 0 0 0 1px rgba(201,169,97,0.15);
+}
+.star-icon {
+  font-size:22px;
+  color:var(--gold);
+  margin-bottom:6px;
+  filter:drop-shadow(0 0 6px rgba(201,169,97,0.5));
+}
+.star-label {
+  font-family:'Cinzel', serif;
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:3px;
+  color:var(--bone);
+  text-transform:uppercase;
+  margin-bottom:4px;
+}
+.star-sub {
+  font-family:'Manrope';
+  font-size:10px;
+  font-weight:700;
+  color:var(--gold);
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
 .crest-l, .crest-r {
   position:absolute;
   top:50%;
@@ -1497,8 +1549,11 @@ footer {
   footer { padding:24px 20px; flex-direction:column; text-align:center; }
   .hero-meta { gap:14px; }
   .hm-item { border-right:none; padding:0; }
-  .crest-l { left:-20px; transform:translateY(-50%) rotate(-8deg) scale(0.7); }
-  .crest-r { right:-20px; transform:translateY(-50%) rotate(8deg) scale(0.7); }
+  .stars-row { gap:8px; margin:0 auto 24px; }
+  .star-card { min-width:0; flex:1 1 90px; max-width:none; padding:14px 8px 12px; }
+  .star-label { font-size:11px; letter-spacing:2px; }
+  .star-sub { font-size:8px; letter-spacing:1px; }
+  .star-icon { font-size:18px; }
   .countdown { gap:8px; }
   .cd-box { min-width:64px; padding:10px 12px; }
   .cd-val { font-size:24px; }
@@ -1521,7 +1576,7 @@ footer {
 
 <!-- ANNOUNCEMENT -->
 <div class="ann">
-  <p>⚜ Live Webinar · July 1st · <strong>Only 100 Seats Available</strong> · Spaces Filling Fast</p>
+  <p>⭐ Live Training · July 1st · <strong>Earn Your 5 Stars</strong> · 100 Seats Only</p>
 </div>
 
 <!-- NAV -->
@@ -1542,27 +1597,46 @@ footer {
       Free Live Training · July 1st
     </div>
     <h1 class="hero-h1">
-      Upgrade Your Life, Your Wealth<br>
-      &amp; Your <em>Walk With God</em>
+      Upgrade Your Character.<br>
+      Earn Your <em>5 Stars</em>.
     </h1>
     <p class="hero-sub">
-      A once in a life time opportunity for men and women who refuse to settle for average. Discover the <strong>3-pillar system</strong> King Azoulay uses to elevate your finances, sharpen your spirit, and reclaim the life you were destined to live.
+      Life is GTA. You don't level up by chance — you level up on purpose. On July 1st, King Azoulay breaks down the <strong>5-star system</strong> that maxes out the only stats that matter: <strong>Family · Fight · Freedom · Faith · Fit</strong>.
     </p>
     <div class="hero-visual">
-      <div class="crest-l">
-        <div class="crest-sym">⚜</div>
-        <div class="crest-lbl">Wealth</div>
-        <div class="crest-sub">Financial Mastery</div>
-      </div>
       <div class="portrait-frame">
         <img src="king-hero.jpeg" alt="King Azoulay" onerror="this.style.display='none'">
         <div class="portrait-init">K</div>
         <div class="portrait-name">King Azoulay</div>
       </div>
-      <div class="crest-r">
-        <div class="crest-sym">✡</div>
-        <div class="crest-lbl">Faith</div>
-        <div class="crest-sub">Walk With God</div>
+    </div>
+
+    <!-- 5-STAR ROW: the five stats that matter -->
+    <div class="stars-row">
+      <div class="star-card">
+        <div class="star-icon">⭐</div>
+        <div class="star-label">Family</div>
+        <div class="star-sub">Bloodline</div>
+      </div>
+      <div class="star-card">
+        <div class="star-icon">⭐</div>
+        <div class="star-label">Fight</div>
+        <div class="star-sub">Warrior Mode</div>
+      </div>
+      <div class="star-card">
+        <div class="star-icon">⭐</div>
+        <div class="star-label">Freedom</div>
+        <div class="star-sub">Own Your Time</div>
+      </div>
+      <div class="star-card">
+        <div class="star-icon">⭐</div>
+        <div class="star-label">Faith</div>
+        <div class="star-sub">Walk With God</div>
+      </div>
+      <div class="star-card">
+        <div class="star-icon">⭐</div>
+        <div class="star-label">Fit</div>
+        <div class="star-sub">Body As Temple</div>
       </div>
     </div>
     <div class="hero-meta">
@@ -1599,18 +1673,18 @@ footer {
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-track">
-    <div class="t-item"><span class="dot"></span>Wealth Activation</div>
-    <div class="t-item"><span class="dot"></span>Spiritual Awakening</div>
-    <div class="t-item"><span class="dot"></span>Financial Sovereignty</div>
-    <div class="t-item"><span class="dot"></span>Divine Alignment</div>
-    <div class="t-item"><span class="dot"></span>Inner Power</div>
-    <div class="t-item"><span class="dot"></span>Walk With God</div>
-    <div class="t-item"><span class="dot"></span>Wealth Activation</div>
-    <div class="t-item"><span class="dot"></span>Spiritual Awakening</div>
-    <div class="t-item"><span class="dot"></span>Financial Sovereignty</div>
-    <div class="t-item"><span class="dot"></span>Divine Alignment</div>
-    <div class="t-item"><span class="dot"></span>Inner Power</div>
-    <div class="t-item"><span class="dot"></span>Walk With God</div>
+    <div class="t-item"><span class="dot"></span>⭐ Family</div>
+    <div class="t-item"><span class="dot"></span>⭐ Fight</div>
+    <div class="t-item"><span class="dot"></span>⭐ Freedom</div>
+    <div class="t-item"><span class="dot"></span>⭐ Faith</div>
+    <div class="t-item"><span class="dot"></span>⭐ Fit</div>
+    <div class="t-item"><span class="dot"></span>Upgrade Your Character</div>
+    <div class="t-item"><span class="dot"></span>⭐ Family</div>
+    <div class="t-item"><span class="dot"></span>⭐ Fight</div>
+    <div class="t-item"><span class="dot"></span>⭐ Freedom</div>
+    <div class="t-item"><span class="dot"></span>⭐ Faith</div>
+    <div class="t-item"><span class="dot"></span>⭐ Fit</div>
+    <div class="t-item"><span class="dot"></span>Upgrade Your Character</div>
   </div>
 </div>
 
@@ -1639,7 +1713,7 @@ footer {
           Over the years, King has helped <strong>millions of men and women completely transform their lives</strong>. We're not talking about small wins or motivational bullsh*t. We're talking real results — the kind that have never been seen before in this space. The kind that change families for generations. Because nobody does this the way he does it.
         </p>
         <p>
-          He's the best at what he does. That's not hype, that's just the truth — and on <strong>July 1st</strong>, you're going to see exactly why. The same system he runs with his private clients — the one that's built businesses, restored faith, and reshaped lives across the globe — is the one he's going to break down for you, live, step by step.
+          He's the best at what he does. That's not hype, that's just the truth — and on <strong>July 1st</strong>, you're going to see exactly why. The same <strong>5-star system</strong> he runs with his private clients — the one that maxes out Family, Fight, Freedom, Faith and Fit — is the one he's going to break down for you, live, step by step.
         </p>
       </div>
 
@@ -1757,8 +1831,8 @@ footer {
     <div class="quiz-cta-card">
       <div class="qcc-icon">⚜</div>
       <div class="quiz-cta-eyebrow">⚜ Qualification Required</div>
-      <h3>Is this <em>your moment</em> to rise?</h3>
-      <p>Enter your details and answer 8 short questions so we can determine if this webinar is the right fit for your current season — and reserve your seat.</p>
+      <h3>Ready to earn your <em>5 stars</em>?</h3>
+      <p>Enter your details and answer 8 short questions so we can lock in which stars you're missing — and reserve your seat for the July 1st training.</p>
       <button class="quiz-cta-btn" onclick="openQuiz()">Begin Qualification →</button>
       <div class="quiz-cta-meta">
         <span>⏱ 90 seconds</span>
@@ -1852,23 +1926,31 @@ footer {
       <div class="q-step" id="step4">
         <div class="opts">
           <div>
-            <div class="drop-label">Which area of your life needs the <em>biggest upgrade</em>?</div>
+            <div class="drop-label">Which <em>star</em> is missing from your life right now?</div>
             <div class="radio-list" data-q="3">
               <label class="radio-opt" data-val="0">
                 <input type="radio" name="q3"><div class="radio-circ"></div>
-                <span>My finances — I need to multiply my income</span>
+                <span>⭐ Family — my bloodline and relationships need work</span>
               </label>
               <label class="radio-opt" data-val="1">
                 <input type="radio" name="q3"><div class="radio-circ"></div>
-                <span>My spirit — I need to reconnect with God</span>
+                <span>⭐ Fight — I've lost my edge and mental toughness</span>
               </label>
               <label class="radio-opt" data-val="2">
                 <input type="radio" name="q3"><div class="radio-circ"></div>
-                <span>My discipline — I need to become the man/woman I'm meant to be</span>
+                <span>⭐ Freedom — I don't own my time, money or decisions</span>
               </label>
               <label class="radio-opt" data-val="3">
                 <input type="radio" name="q3"><div class="radio-circ"></div>
-                <span>All of it — I need a complete reset</span>
+                <span>⭐ Faith — I need to walk closer with God</span>
+              </label>
+              <label class="radio-opt" data-val="4">
+                <input type="radio" name="q3"><div class="radio-circ"></div>
+                <span>⭐ Fit — my body has been neglected</span>
+              </label>
+              <label class="radio-opt" data-val="5">
+                <input type="radio" name="q3"><div class="radio-circ"></div>
+                <span>All 5 stars — I need a complete character upgrade</span>
               </label>
             </div>
           </div>
@@ -2116,7 +2198,7 @@ footer {
     <div class="urg-eyebrow">⚜ Time Is Running Out</div>
     <h1 class="urg-h">The doors close <em>July 1st</em></h1>
     <p class="urg-body">
-      Only <strong>100 seats</strong> are made available for each live broadcast. Once they're claimed, the room is sealed. Don't let another season pass watching others rise without you.
+      Only <strong>100 seats</strong> are made available for each live broadcast. Once they're claimed, the room is sealed. Don't spend another year stuck at <strong>zero stars</strong> while everyone else levels up.
     </p>
     <div class="countdown" id="countdown">
       <div class="cd-box"><div class="cd-val" id="cdDays">—</div><div class="cd-lbl">Days</div></div>
@@ -2240,8 +2322,8 @@ function calcScore() {
   const q1 = [3, 10, 16, 20, 22][answers.q1] || 0;
   // Q2 Spiritual state — peak at the seeker / disconnected believer
   const q2 = [6, 12, 15, 13][answers.q2] || 0;
-  // Q3 Area to upgrade — "all of it" signals biggest pain
-  const q3 = [4, 4, 4, 7][answers.q3] || 0;
+  // Q3 Missing star — single star = aware; "all 5" = biggest pain & deepest fit
+  const q3 = [5, 5, 5, 5, 5, 8][answers.q3] || 0;
   // Q4 Obstacle — "no clear path" + "discipline" = coachable
   const q4 = [4, 3, 6, 6][answers.q4] || 0;
   // Q5 Investment history — strong buyer signal
