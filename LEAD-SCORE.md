@@ -17,7 +17,7 @@
 
 ## How the Score Breaks Down
 
-Only **4 of the 8 questions** carry the score weight. The other 4 are setter-context questions (see "Setter Context Questions" below) to give you the angle for the call.
+Only **4 of the 8 questions** carry the score weight. The other 4 are setter-context questions (see "Setter Context Questions" below) and give you the angle for the call.
 
 ### 1. Monthly Income → Capital Signal (max 10 pts)
 
@@ -67,24 +67,25 @@ Only **4 of the 8 questions** carry the score weight. The other 4 are setter-con
 
 ---
 
-## Setter Context Questions (do NOT score, use for the call)
+## Setter Context Questions (do NOT score, use these for the call)
 
-These four answers don't change the lead score, but they tell you **exactly how to talk to the lead** when you dial.
+These four answers don't change the lead score, but they tell you **exactly how to open and run the call.**
 
-### Relationship With God (Q2)
+### Current Position (Q2)
 
-> *"Where are you in your relationship with God?"*
+> *"What best describes your situation right now?"*
 
 | Answer | What it means for the call |
 | --- | --- |
-| Don't believe but curious | Soft on faith. Don't lead with God talk. Lead with results, money, freedom. |
-| Believe but feel disconnected | Pain point. They want to come back. Use the spiritual hook gently. |
-| Pray sometimes, want a deeper bond | Open. Faith language lands here. |
-| Walk with Him daily, want to go deeper | Strong believer. Lead with the Faith star. They'll resonate fast. |
+| Employed (working a job) | Stuck in the rat race. Lead with freedom, time, escape from the 9 to 5. |
+| Self-employed or freelancer | Solo grinder. Lead with scale, leverage, building a real business. |
+| Running my own business | Already in motion. Lead with systems, team, taking the business to the next level. |
+| Between jobs or just starting out | Open and looking. Lead with clarity, direction, first 10K month. |
+| Retired or not currently working | Legacy focus. Lead with purpose, family, leaving something behind. |
 
 ### Which Area Needs the Most Work (Q3)
 
-> *"Which area of your life needs the most work?"*
+> *"Which area of your life needs the most attention right now?"*
 
 | Answer | Setter angle |
 | --- | --- |
@@ -95,45 +96,63 @@ These four answers don't change the lead score, but they tell you **exactly how 
 | ⭐ Fit | Talk about physical strength, energy, presence. |
 | All of them. Complete reset | **Biggest pain, deepest fit.** Close hard. |
 
-### Biggest Thing Holding Them Back (Q4)
+### What They Think They Need Most (Q4)
 
-> *"What's the biggest thing holding you back right now?"*
+> *"What do you think you need most right now to fix it?"*
+
+This is the **most important setter answer.** You're literally being told what to sell them.
 
 | Answer | Setter angle |
 | --- | --- |
-| Self-doubt. I don't believe I can really change | Mindset reset. Tell them the King's clients felt the same way. |
-| Money. I'm starting from zero | Payment plan. Frame this as an investment that pays itself back. |
-| I don't know where to start or what to do next | This is what the system gives them. The webinar IS the roadmap. |
-| Discipline. I quit before I finish what I start | Accountability angle. Lean on the structure of the program. |
+| A clear plan or roadmap I can actually follow | Sell the SYSTEM. The 5-star framework IS the roadmap. |
+| A mentor or coach who's been where I want to go | Sell ACCESS to King. Lead with private clients, results, his journey. |
+| More discipline and accountability | Sell the STRUCTURE. The program holds them accountable. |
+| More belief and confidence in myself | Sell IDENTITY. Show them who they become. Use testimonials heavily. |
+| The right network of people around me | Sell the COMMUNITY. The mastermind, the network, the room. |
 
-### 12-Month Transformation Worth (Q6)
+### Biggest 12-Month Goal (Q6)
 
-> *"If your life was completely transformed in 12 months, what would that be worth to you?"*
+> *"What's your biggest goal in the next 12 months?"*
 
-| Answer | What it means for the close |
+| Answer | Setter angle |
 | --- | --- |
-| I'm not sure yet, still figuring it out | They haven't decided value. Build it on the call. |
-| Something, but not a big spend | Budget objection. Payment plan. |
-| A lot. I'd seriously invest in the right path | **Pre-qualified for the pitch.** Lead with high-ticket. |
-| Everything. This would change my entire bloodline | **Buying language.** Don't pitch. Close. |
+| Make my first $10K month | Beginner buyer. Lead with the income star, first wins, proof of concept. |
+| Scale my income and build real wealth | Mid-tier buyer. Lead with leverage, systems, hitting the next level. |
+| Build a business that runs without me | Advanced buyer. Lead with freedom star, team, exit-ready operation. |
+| Find clarity and direction in my life | Identity buyer. Lead with the 5 stars framework as the map. |
+| Leave a legacy for my family | Legacy buyer. **High-emotion close.** Talk about generations, bloodline, what they pass down. |
 
 ---
 
 ## Quick Read: What to Say Based on Score
 
 **Score 20–25 (HOT)**
-They have capital, they're in pain, they have urgency. Don't over-explain. Get to the point fast: confirm the pain (which area needs the most work), confirm the goal (the urgency answer), close. They're ready to buy. They just need a reason to do it today.
+They have capital, they're in pain, and they have urgency. Don't over-explain. Open with their Q4 ("you said you need [X]") — that's the exact thing you're selling them. Confirm the goal (Q6), confirm the area of pain (Q3), close. They're ready. They just need a reason to do it today.
 
 **Score 14–19 (WARM)**
 Good fit, but one objection — usually budget OR skepticism. Find out which one early.
-* Budget objection → lean on the payment plan.
-* Skepticism → lean on the live testimonials from the webinar + the 8 client videos on the page.
+* Budget objection → lean on the payment plan + the income star.
+* Skepticism → lean on the 8 client videos + King's results + his story.
 
 **Score 8–13 (NEUTRAL)**
-Lower capital or lower urgency. Don't spend forever on the first dial. If they don't engage in the first 3 minutes, move on and follow up later in the week after you've closed the hot ones. When you circle back, lean on their obstacle answer (Q4) to reignite the pain.
+Lower capital or lower urgency. Don't spend forever here on the first dial. If they don't engage in the first 3 minutes, move on and follow up later in the week. When you circle back, lead with their Q3 (biggest pain area) and Q4 (what they think they need) to reignite the conversation.
 
 **Score 0–7 (COLD)**
 Lowest priority. Brand new, low capital, or not in motion. Nurture them. Focus on the payment plan and the free webinar value. Don't push the high-ticket on first call. Build trust first.
+
+---
+
+## Setter Script Framework (any tier)
+
+Open with their actual answers. You're not guessing, you're confirming:
+
+> "Hey [Name], I'm calling from King Azoulay's team. I saw on the form that you're [Q2: current position] making around [Q1: income] a month. You said the area that needs the most attention right now is [Q3: which star]. And you mentioned what you really need is [Q4: what they think they need]. Your goal for the next 12 months is [Q6: goal]. Did I get that right?"
+
+> *(let them confirm)*
+
+> "Cool. That's exactly what King's 5-star system is built for. Let me show you how it works..."
+
+That opening alone closes 30%+ of HOT leads because the lead feels SEEN.
 
 ---
 
