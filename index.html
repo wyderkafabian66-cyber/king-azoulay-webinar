@@ -1387,8 +1387,9 @@ body.modal-open { overflow:hidden; }
   border-radius:4px;
   margin-bottom:18px;
 }
-.tier-hot { background:rgba(201,169,97,0.15); border:1px solid var(--gold); color:var(--gold-bright); }
-.tier-warm { background:rgba(201,169,97,0.08); border:1px solid var(--border-strong); color:var(--gold); }
+.tier-hot { background:rgba(201,169,97,0.18); border:1px solid var(--gold-bright); color:var(--gold-bright); }
+.tier-warm { background:rgba(201,169,97,0.10); border:1px solid var(--gold); color:var(--gold); }
+.tier-neutral { background:rgba(201,169,97,0.04); border:1px solid var(--border); color:var(--gold-deep); }
 .tier-cold { background:rgba(255,255,255,0.05); border:1px solid var(--ash); color:var(--grey); }
 .success-msg {
   font-family:'Manrope';
@@ -2316,35 +2317,40 @@ document.querySelectorAll('a[href="#quiz"]').forEach(a => {
   });
 });
 
-function calcScore() {
-  // Weighted lead scoring (max ~100)
-  // Q1 Income : financial fit for downstream offers
-  const q1 = [3, 10, 16, 20, 22][answers.q1] || 0;
-  // Q2 Spiritual state : peak at the seeker / disconnected believer
-  const q2 = [6, 12, 15, 13][answers.q2] || 0;
-  // Q3 Missing star : single star = aware; "all 5" = biggest pain & deepest fit
-  const q3 = [5, 5, 5, 5, 5, 8][answers.q3] || 0;
-  // Q4 Obstacle : "no clear path" + "discipline" = coachable
-  const q4 = [4, 3, 6, 6][answers.q4] || 0;
-  // Q5 Investment history : strong buyer signal
-  const q5 = [4, 6, 10, 14][answers.q5] || 0;
-  // Q6 Commitment/worth : what they're willing to invest
-  const q6 = [3, 7, 13, 18][answers.q6] || 0;
-  // Q7 Urgency : readiness to act in 90 days
-  const q7 = [3, 8, 16, 22][answers.q7] || 0;
-  // Q8 Age : prime acquisition demographic for wealth+faith offer
+// ─────────────────────────────────────────────
+// LEAD SCORING (25-pt max). See LEAD-SCORE.md for the
+// setter reference sheet. Only 4 questions weight the
+// score: Income (capital proxy), Investment history,
+// Urgency, Age. The other 4 stay for setter context.
+// ─────────────────────────────────────────────
+function scoreBreakdown() {
+  // Q1 Income → Capital signal (max 10)
+  // <$3K / $3-10K / $10-30K / $30-100K / $100K+
+  const q1 = [0, 3, 6, 8, 10][answers.q1] || 0;
+  // Q5 Investment history → Experience signal (max 6)
+  // Best buyer (6) has bought courses but is still stuck.
+  // Coaches client (4) is a good lead, different angle, position upsell.
+  // Never / Free only / Courses / Coaches
+  const q5 = [0, 2, 6, 4][answers.q5] || 0;
+  // Q7 Urgency → Primary Goal signal (max 3)
+  // NPC / Open / Grind / Main character
+  const q7 = [0, 1, 2, 3][answers.q7] || 0;
+  // Q8 Age → Buying power × urgency (max 6)
   // Under 25 / 25-34 / 35-44 / 45-54 / 55+
-  const q8 = [8, 18, 20, 16, 10][answers.q8] || 0;
-
-  return Math.min(100, q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8);
+  const q8 = [2, 3, 4, 5, 6][answers.q8] || 0;
+  return { q1, q5, q7, q8, total: q1 + q5 + q7 + q8 };
 }
 
+function calcScore() { return scoreBreakdown().total; }
+
 function tier(score) {
-  if (score >= 75) return { label:'CHOSEN · PRIORITY SEAT', cls:'tier-hot',
-    msg: 'You\'re exactly who this webinar is built for. <strong>Expect a personal call from the King\'s team</strong> within 48 hours.' };
-  if (score >= 50) return { label:'QUALIFIED', cls:'tier-warm',
-    msg: 'You\'re ready for what\'s coming. Show up live on <strong>July 1st</strong> and bring a notebook. This will change the trajectory of your year.' };
-  return { label:'INVITED', cls:'tier-cold',
+  if (score >= 20) return { label:'HOT', cls:'tier-hot',
+    msg: 'High capital, real pain, ready to move. <strong>Expect the King\'s team to dial you today.</strong> Make sure your phone is on.' };
+  if (score >= 14) return { label:'WARM', cls:'tier-warm',
+    msg: 'You\'re a strong fit. <strong>The King\'s team will reach out within 48 hours.</strong> Show up live on July 1st with a notebook.' };
+  if (score >= 8) return { label:'NEUTRAL', cls:'tier-neutral',
+    msg: 'Your seat is locked in. Show up live on <strong>July 1st</strong>, ready to take notes. This will change the year for you.' };
+  return { label:'COLD', cls:'tier-cold',
     msg: 'Your seat is saved. Come with an open heart on <strong>July 1st</strong>. The King speaks to anyone willing to listen.' };
 }
 
@@ -2397,7 +2403,8 @@ function submitForm() {
   err.classList.remove('show');
   emailEl.classList.remove('error');
 
-  const score = calcScore();
+  const breakdown = scoreBreakdown();
+  const score = breakdown.total;
   const t = tier(score);
 
   // payload for backend (CRM / email automation)
@@ -2408,6 +2415,8 @@ function submitForm() {
     phoneCountry: fphoneCountry,
     answers: answers,
     leadScore: score,
+    leadScoreMax: 25,
+    leadScoreBreakdown: breakdown,
     tier: t.label,
     webinarDate: '2026-07-01T19:00:00-04:00',
     submittedAt: new Date().toISOString()
@@ -2424,7 +2433,7 @@ function submitForm() {
   succ.classList.add('show');
 
   document.getElementById('successTitle').innerHTML = 'Welcome, ' + fname.split(' ')[0] + '.';
-  document.getElementById('scoreVal').textContent = score + ' / 100';
+  document.getElementById('scoreVal').textContent = score + ' / 25';
   const tierEl = document.getElementById('successTier');
   tierEl.textContent = t.label;
   tierEl.className = 'success-tier ' + t.cls;
