@@ -21,6 +21,8 @@ Only **4 of the 8 questions** carry the score weight. The other 4 are setter-con
 
 ### 1. Monthly Income → Capital Signal (max 10 pts)
 
+> *"What's your current monthly income?"*
+
 | **Answer** | **Score** | **What It Signals** |
 | --- | --- | --- |
 | Less than $3K / month | 0 | Cannot fund the offer. Hard sell. Lean on payment plan only. |
@@ -31,23 +33,29 @@ Only **4 of the 8 questions** carry the score weight. The other 4 are setter-con
 
 ### 2. Investment History → Experience Signal (max 6 pts)
 
+> *"Have you ever invested in your personal growth before?"*
+
 | **Answer** | **Score** | **What It Signals** |
 | --- | --- | --- |
-| Never spent on growth | 0 | Needs education before they buy. Long sell. |
+| Never. This would be my first time | 0 | Needs education before they buy. Long sell. |
 | Free stuff only (books, podcasts, YouTube) | 2 | Aware but not committed. Show them the cost of staying stuck. |
 | Yes, I've bought courses or programs | **6** | **Best buyer.** Has tried, has pain, knows they need a coach this time. |
 | Yes, I've worked with real coaches or mentors | 4 | Strong lead but different angle. Position the upsell / next-level program. |
 
-### 3. Urgency → Primary Goal Signal (max 3 pts)
+### 3. How Serious Are You? → Primary Goal Signal (max 3 pts)
+
+> *"How serious are you about making changes in your life right now?"*
 
 | **Answer** | **Score** | **What It Signals** |
 | --- | --- | --- |
-| Just exploring (NPC at the moment) | 0 | No real urgency. Move on. |
-| Open to change if the right path drops | 1 | Moderate motivation. Lean on FOMO. |
-| Ready to grind, I'll put in the reps | 2 | High urgency. Use this in the pitch. |
-| All in. Main character mode, starting today | 3 | **Maximum motivation.** Don't over-explain. Close. |
+| Just exploring. No real urgency right now | 0 | No real urgency. Move on. |
+| Open to change if the right path appears | 1 | Moderate motivation. Lean on FOMO. |
+| Ready to do the work | 2 | High urgency. Use this in the pitch. |
+| All in. I'll do whatever it takes, starting today | 3 | **Maximum motivation.** Don't over-explain. Close. |
 
 ### 4. Age → Buying Power × Urgency (max 6 pts)
+
+> *"What's your age range?"*
 
 | **Answer** | **Score** | **What It Signals** |
 | --- | --- | --- |
@@ -63,58 +71,66 @@ Only **4 of the 8 questions** carry the score weight. The other 4 are setter-con
 
 These four answers don't change the lead score, but they tell you **exactly how to talk to the lead** when you dial.
 
-### Faith Star (Q2)
+### Relationship With God (Q2)
+
+> *"Where are you in your relationship with God?"*
 
 | Answer | What it means for the call |
 | --- | --- |
 | Don't believe but curious | Soft on faith. Don't lead with God talk. Lead with results, money, freedom. |
-| Believe but feel disconnected | Pain point. They want to come back. Use the spiritual hook. |
-| Pray sometimes, want deeper bond | Open. Use Faith star language naturally. |
+| Believe but feel disconnected | Pain point. They want to come back. Use the spiritual hook gently. |
+| Pray sometimes, want a deeper bond | Open. Faith language lands here. |
 | Walk with Him daily, want to go deeper | Strong believer. Lead with the Faith star. They'll resonate fast. |
 
-### Which Star is Missing (Q3)
+### Which Area Needs the Most Work (Q3)
+
+> *"Which area of your life needs the most work?"*
 
 | Answer | Setter angle |
 | --- | --- |
-| Family | Talk about bloodline, legacy, becoming the man their family needs. |
-| Fight | Talk about reclaiming mental edge, masculinity, willpower. |
-| Freedom | Talk about money, time, autonomy. **Often pairs with a HOT score.** |
-| Faith | Talk about purpose, walking with God, peace. |
-| Fit | Talk about physical strength, energy, presence. |
-| All 5 stars | **Biggest pain, deepest fit.** They want a complete reset. Close hard. |
+| ⭐ Family | Talk about bloodline, legacy, becoming the man their family needs. |
+| ⭐ Fight | Talk about reclaiming mental edge, willpower, masculinity. |
+| ⭐ Freedom | Talk about money, time, autonomy. **Often pairs with a HOT score.** |
+| ⭐ Faith | Talk about purpose, walking with God, peace. |
+| ⭐ Fit | Talk about physical strength, energy, presence. |
+| All of them. Complete reset | **Biggest pain, deepest fit.** Close hard. |
 
-### Boss-Level Enemy / Obstacle (Q4)
+### Biggest Thing Holding Them Back (Q4)
+
+> *"What's the biggest thing holding you back right now?"*
 
 | Answer | Setter angle |
 | --- | --- |
-| Self-doubt (don't believe I can level up) | Mindset reset. Tell them the King's clients felt the same way. |
-| No starting cash (grinding from zero) | Payment plan. Frame this as the investment that pays itself back. |
-| No map (don't know which stat to grind) | This is what the system gives them. The webinar IS the map. |
-| No discipline (quit before the level is done) | Accountability angle. Lean on the structure of the program. |
+| Self-doubt. I don't believe I can really change | Mindset reset. Tell them the King's clients felt the same way. |
+| Money. I'm starting from zero | Payment plan. Frame this as an investment that pays itself back. |
+| I don't know where to start or what to do next | This is what the system gives them. The webinar IS the roadmap. |
+| Discipline. I quit before I finish what I start | Accountability angle. Lean on the structure of the program. |
 
-### Worth Maxed (Q6)
+### 12-Month Transformation Worth (Q6)
+
+> *"If your life was completely transformed in 12 months, what would that be worth to you?"*
 
 | Answer | What it means for the close |
 | --- | --- |
-| Not sure yet | They haven't decided value. Build it on the call. |
+| I'm not sure yet, still figuring it out | They haven't decided value. Build it on the call. |
 | Something, but not a big spend | Budget objection. Payment plan. |
-| A lot, would seriously invest in the right system | **Pre-qualified for the pitch.** Lead with high-ticket. |
-| Everything, would change my entire bloodline | **Buying language.** Don't pitch. Close. |
+| A lot. I'd seriously invest in the right path | **Pre-qualified for the pitch.** Lead with high-ticket. |
+| Everything. This would change my entire bloodline | **Buying language.** Don't pitch. Close. |
 
 ---
 
 ## Quick Read: What to Say Based on Score
 
 **Score 20–25 (HOT)**
-They have capital, they're in pain, they have urgency. Don't over-explain. Get to the point fast: confirm the pain (which star is missing), confirm the goal (urgency answer), close. They're ready to buy. They just need a reason to do it today.
+They have capital, they're in pain, they have urgency. Don't over-explain. Get to the point fast: confirm the pain (which area needs the most work), confirm the goal (the urgency answer), close. They're ready to buy. They just need a reason to do it today.
 
 **Score 14–19 (WARM)**
 Good fit, but one objection — usually budget OR skepticism. Find out which one early.
-- Budget objection → lean on the payment plan.
-- Skepticism → lean on the live testimonials from the webinar + the 8 client videos on the page.
+* Budget objection → lean on the payment plan.
+* Skepticism → lean on the live testimonials from the webinar + the 8 client videos on the page.
 
 **Score 8–13 (NEUTRAL)**
-Lower capital or lower urgency. Don't spend forever here on the first dial. If they don't engage in the first 3 minutes, move on and follow up later in the week after you've closed the hot ones. When you do circle back, lean on the obstacle answer (Q4) to reignite the pain.
+Lower capital or lower urgency. Don't spend forever on the first dial. If they don't engage in the first 3 minutes, move on and follow up later in the week after you've closed the hot ones. When you circle back, lean on their obstacle answer (Q4) to reignite the pain.
 
 **Score 0–7 (COLD)**
 Lowest priority. Brand new, low capital, or not in motion. Nurture them. Focus on the payment plan and the free webinar value. Don't push the high-ticket on first call. Build trust first.
@@ -133,7 +149,7 @@ Lowest priority. Brand new, low capital, or not in motion. Nurture them. Focus o
 
 ---
 
-## Webinar context to mention on calls
+## Webinar Context to Mention on Calls
 
 * Date: **July 1st, 7PM EST** (90 minutes, live)
 * It's free, but only 100 seats per broadcast
