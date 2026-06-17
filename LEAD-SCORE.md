@@ -8,7 +8,6 @@
 
 ```
 1. Lead fills the form on site
-2. Lead is auto-scored (25-pt max, tiered HOT / WARM / NEUTRAL / COLD)
 3. Lead is pushed into bloo.io
 4. AI sends the OPENER automatically
 5. When the lead replies → setter takes over
