@@ -1,23 +1,23 @@
-# King Azoulay – Lead Score Reference Sheet
+# King Azoulay – Lead Score & Messaging Playbook
 
-**Max possible score: 25 points.** Use this sheet to quickly read a lead's score and know exactly how to prioritize and approach the call.
+**Max possible score: 25 points.** Use this sheet to quickly read a lead's score and know exactly how to prioritize and message them.
 
 ---
 
 ## Score Tiers
 
-| **Score** | **Tier** | **What It Means** | **Priority** |
+| **Score** | **Tier** | **What It Means** | **Messaging Priority** |
 | --- | --- | --- | --- |
-| **20–25** | HOT | High capital, real pain, motivated buyer. Close today. | Dial first, same day |
-| **14–19** | WARM | Good fit, some friction. Needs the right angle. | Dial Day 1–2 |
-| **8–13** | NEUTRAL | Possible buyer, lower urgency or lower capital. | Dial Day 2–3 |
-| **0–7** | COLD | Low capital, low urgency, or brand new. Longer sell. | Dial last, follow up |
+| **20–25** | HOT | High capital, real pain, motivated buyer. Pre-sold. | Message within 1 hour |
+| **14–19** | WARM | Good fit, some friction. Needs the right angle. | Message Day 1 |
+| **8–13** | NEUTRAL | Possible buyer, lower urgency or lower capital. | Message Day 2 |
+| **0–7** | COLD | Low capital, low urgency, or brand new. Long sell. | Message Day 3+, nurture |
 
 ---
 
 ## How the Score Breaks Down
 
-Only **4 of the 8 questions** carry the score weight. The other 4 are setter-context questions (see "Setter Context Questions" below) and give you the angle for the call.
+Only **4 of the 8 questions** carry the score weight. The other 4 are setter-context questions (see "Setter Context Questions" below) and give you the angle for the message.
 
 ### 1. Monthly Income → Capital Signal (max 10 pts)
 
@@ -25,8 +25,8 @@ Only **4 of the 8 questions** carry the score weight. The other 4 are setter-con
 
 | **Answer** | **Score** | **What It Signals** |
 | --- | --- | --- |
-| Less than $3K / month | 0 | Cannot fund the offer. Hard sell. Lean on payment plan only. |
-| $3K to $10K / month | 3 | Tight budget. Possible buyer if motivation is high. Payment plan. |
+| Less than $3K / month | 0 | Cannot fund the offer. Lean on payment plan only. |
+| $3K to $10K / month | 3 | Tight budget. Possible buyer if motivation is high. |
 | $10K to $30K / month | 6 | Solid buyer. Has skin in the game. |
 | $30K to $100K / month | 8 | Strong buyer. Decision-maker. |
 | $100K+ / month | 10 | **Highest priority.** Has the capital and the leverage to act now. |
@@ -37,7 +37,7 @@ Only **4 of the 8 questions** carry the score weight. The other 4 are setter-con
 
 | **Answer** | **Score** | **What It Signals** |
 | --- | --- | --- |
-| Never. This would be my first time | 0 | Needs education before they buy. Long sell. |
+| Never. This would be my first time | 0 | Needs education before they buy. Long nurture. |
 | Free stuff only (books, podcasts, YouTube) | 2 | Aware but not committed. Show them the cost of staying stuck. |
 | Yes, I've bought courses or programs | **6** | **Best buyer.** Has tried, has pain, knows they need a coach this time. |
 | Yes, I've worked with real coaches or mentors | 4 | Strong lead but different angle. Position the upsell / next-level program. |
@@ -48,10 +48,10 @@ Only **4 of the 8 questions** carry the score weight. The other 4 are setter-con
 
 | **Answer** | **Score** | **What It Signals** |
 | --- | --- | --- |
-| Just exploring. No real urgency right now | 0 | No real urgency. Move on. |
-| Open to change if the right path appears | 1 | Moderate motivation. Lean on FOMO. |
-| Ready to do the work | 2 | High urgency. Use this in the pitch. |
-| All in. I'll do whatever it takes, starting today | 3 | **Maximum motivation.** Don't over-explain. Close. |
+| Just exploring. No real urgency right now | 0 | No real urgency. Long nurture. |
+| Open to change if the right path appears | 1 | Moderate motivation. Use the webinar as the FOMO. |
+| Ready to do the work | 2 | High urgency. Push them to the live training. |
+| All in. I'll do whatever it takes, starting today | 3 | **Maximum motivation.** Pre-sold. Don't over-message, just open the door. |
 
 ### 4. Age → Buying Power × Urgency (max 6 pts)
 
@@ -67,34 +67,34 @@ Only **4 of the 8 questions** carry the score weight. The other 4 are setter-con
 
 ---
 
-## Setter Context Questions (do NOT score, use these for the call)
+## Setter Context Questions (do NOT score, use these for the message)
 
-These four answers don't change the lead score, but they tell you **exactly how to open and run the call.**
+These four answers don't change the lead score, but they tell you **exactly how to open the conversation.**
 
 ### Current Position (Q2)
 
 > *"What best describes your situation right now?"*
 
-| Answer | What it means for the call |
+| Answer | What it means for the message |
 | --- | --- |
 | Employed (working a job) | Stuck in the rat race. Lead with freedom, time, escape from the 9 to 5. |
 | Self-employed or freelancer | Solo grinder. Lead with scale, leverage, building a real business. |
 | Running my own business | Already in motion. Lead with systems, team, taking the business to the next level. |
-| Between jobs or just starting out | Open and looking. Lead with clarity, direction, first 10K month. |
+| Between jobs or just starting out | Open and looking. Lead with clarity, direction, first $10K month. |
 | Retired or not currently working | Legacy focus. Lead with purpose, family, leaving something behind. |
 
 ### Which Area Needs the Most Work (Q3)
 
 > *"Which area of your life needs the most attention right now?"*
 
-| Answer | Setter angle |
+| Answer | Messaging angle |
 | --- | --- |
 | ⭐ Family | Talk about bloodline, legacy, becoming the man their family needs. |
 | ⭐ Fight | Talk about reclaiming mental edge, willpower, masculinity. |
 | ⭐ Freedom | Talk about money, time, autonomy. **Often pairs with a HOT score.** |
 | ⭐ Faith | Talk about purpose, walking with God, peace. |
 | ⭐ Fit | Talk about physical strength, energy, presence. |
-| All of them. Complete reset | **Biggest pain, deepest fit.** Close hard. |
+| All of them. Complete reset | **Biggest pain, deepest fit.** Lead hard. |
 
 ### What They Think They Need Most (Q4)
 
@@ -102,73 +102,105 @@ These four answers don't change the lead score, but they tell you **exactly how 
 
 This is the **most important setter answer.** You're literally being told what to sell them.
 
-| Answer | Setter angle |
+| Answer | What you sell |
 | --- | --- |
 | A clear plan or roadmap I can actually follow | Sell the SYSTEM. The 5-star framework IS the roadmap. |
 | A mentor or coach who's been where I want to go | Sell ACCESS to King. Lead with private clients, results, his journey. |
 | More discipline and accountability | Sell the STRUCTURE. The program holds them accountable. |
-| More belief and confidence in myself | Sell IDENTITY. Show them who they become. Use testimonials heavily. |
+| More belief and confidence in myself | Sell IDENTITY. Show them who they become. Use the 8 client videos. |
 | The right network of people around me | Sell the COMMUNITY. The mastermind, the network, the room. |
 
 ### Biggest 12-Month Goal (Q6)
 
 > *"What's your biggest goal in the next 12 months?"*
 
-| Answer | Setter angle |
+| Answer | Messaging angle |
 | --- | --- |
-| Make my first $10K month | Beginner buyer. Lead with the income star, first wins, proof of concept. |
+| Make my first $10K month | Beginner buyer. Lead with the Freedom star, first wins, proof of concept. |
 | Scale my income and build real wealth | Mid-tier buyer. Lead with leverage, systems, hitting the next level. |
-| Build a business that runs without me | Advanced buyer. Lead with freedom star, team, exit-ready operation. |
+| Build a business that runs without me | Advanced buyer. Lead with freedom, team, exit-ready operation. |
 | Find clarity and direction in my life | Identity buyer. Lead with the 5 stars framework as the map. |
-| Leave a legacy for my family | Legacy buyer. **High-emotion close.** Talk about generations, bloodline, what they pass down. |
+| Leave a legacy for my family | Legacy buyer. **High-emotion message.** Talk generations, bloodline, what they pass down. |
 
 ---
 
-## Quick Read: What to Say Based on Score
+## First Message Templates (by tier)
 
-**Score 20–25 (HOT)**
-They have capital, they're in pain, and they have urgency. Don't over-explain. Open with their Q4 ("you said you need [X]") — that's the exact thing you're selling them. Confirm the goal (Q6), confirm the area of pain (Q3), close. They're ready. They just need a reason to do it today.
+Always **lead with their answers.** They filled out the form — make them feel SEEN. Then put the ball back in their court with a single question.
 
-**Score 14–19 (WARM)**
-Good fit, but one objection — usually budget OR skepticism. Find out which one early.
-* Budget objection → lean on the payment plan + the income star.
-* Skepticism → lean on the 8 client videos + King's results + his story.
+### HOT (20–25) – Message within 1 hour of signup
 
-**Score 8–13 (NEUTRAL)**
-Lower capital or lower urgency. Don't spend forever here on the first dial. If they don't engage in the first 3 minutes, move on and follow up later in the week. When you circle back, lead with their Q3 (biggest pain area) and Q4 (what they think they need) to reignite the conversation.
+> Hey [Name], I'm with King's team. Saw you locked in your seat for July 1st 🔥
+>
+> Quick read on your form — you said you're [Q2: position] making [Q1: income/mo], your biggest goal in the next 12 months is [Q6: goal], and the thing you need most right now is [Q4: what they need].
+>
+> That's literally what the training is built for. King's going to walk through the exact system he uses with private clients to do all of that.
+>
+> Are you locked in for 7PM EST on the 1st? I want to make sure you don't miss it.
 
-**Score 0–7 (COLD)**
-Lowest priority. Brand new, low capital, or not in motion. Nurture them. Focus on the payment plan and the free webinar value. Don't push the high-ticket on first call. Build trust first.
+### WARM (14–19) – Message Day 1
 
----
+> Hey [Name], welcome in. Saw you registered for King's July 1st training.
+>
+> You mentioned you're trying to [Q6: goal] and the area that needs the most attention is [Q3: area]. That's a big part of what we're covering on the 1st.
+>
+> Quick question — what's the #1 thing you want to walk away with from the training?
+>
+> (No wrong answer. Just want to make sure King hits it for you.)
 
-## Setter Script Framework (any tier)
+### NEUTRAL (8–13) – Message Day 2
 
-Open with their actual answers. You're not guessing, you're confirming:
+> Hey [Name], wanted to drop in and confirm your seat for King's July 1st training.
+>
+> You said the area that needs the most work for you right now is [Q3: area]. Out of curiosity — what's getting in the way of fixing that today?
 
-> "Hey [Name], I'm calling from King Azoulay's team. I saw on the form that you're [Q2: current position] making around [Q1: income] a month. You said the area that needs the most attention right now is [Q3: which star]. And you mentioned what you really need is [Q4: what they think they need]. Your goal for the next 12 months is [Q6: goal]. Did I get that right?"
+### COLD (0–7) – Message Day 3+
 
-> *(let them confirm)*
-
-> "Cool. That's exactly what King's 5-star system is built for. Let me show you how it works..."
-
-That opening alone closes 30%+ of HOT leads because the lead feels SEEN.
-
----
-
-## Dialing Priority Order
-
-1. **Score 20–25 (HOT)** — Dial Day 1, morning.
-2. **Score 14–19 (WARM)** — Dial Day 1 afternoon + Day 2.
-3. **Score 8–13 (NEUTRAL)** — Dial Day 2 to 3.
-4. **Score 0–7 (COLD)** — Dial Day 3 to 5, follow-up calls.
-
-**Follow-up rule:** No contact on first dial → move to follow-up stage in CRM. Call back the next day.
-**HOT leads get at least 4 days of attempts before being moved.**
+> Hey [Name], thanks for registering for King's training on the 1st 🙏
+>
+> No pressure — just wanted to share a quick video of someone in a similar spot to where you're at right now. [SEND CLIENT VIDEO]
+>
+> Let me know what you think.
 
 ---
 
-## Webinar Context to Mention on Calls
+## Messaging Cadence
+
+* **Day 0 (signup):** HOT leads → message within 1 hour. Everyone else → confirmation email/SMS auto-fires.
+* **Day 1:** WARM message.
+* **Day 2:** NEUTRAL message.
+* **Day 3+:** COLD message + ongoing nurture.
+* **2 days before webinar:** Reminder to ALL tiers — short, personal: *"You ready for tomorrow night?"*
+* **Day of webinar:** SMS reminder, link to join, 30 min before start.
+* **Day after webinar:**
+  * HOT/WARM who attended → push the next step (book a call, claim the offer).
+  * Anyone who skipped → replay link + "what made you miss it?" message.
+
+**Reply rule:** If they reply and don't book/buy on the same message → switch to softer follow-up. Don't double-text the next day. Wait 48 hours.
+
+**Ghost rule:** No reply on first message → second touch 2 days later (different angle). No reply on second → third touch 5 days later. After 3 unanswered touches, drop to long-term nurture.
+
+---
+
+## What to Save in Your CRM Note for Every Lead
+
+Copy-paste this template into the CRM/Slack channel for each new lead so you (or another setter) can re-open the conversation cold:
+
+```
+Lead: [Name] · Score: [X]/25 · Tier: [HOT/WARM/NEUTRAL/COLD]
+Position: [Q2]
+Income: [Q1]
+Biggest area: [Q3]
+What they need: [Q4]  ← THE PITCH
+Goal: [Q6]
+Urgency: [Q7]
+Last touch: [date + channel]
+Next touch: [date + planned message]
+```
+
+---
+
+## Webinar Context to Reference
 
 * Date: **July 1st, 7PM EST** (90 minutes, live)
 * It's free, but only 100 seats per broadcast
