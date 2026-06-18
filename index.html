@@ -2231,11 +2231,29 @@ footer {
 
 <script>
 // ─────────────────────────────────────────────
-// CONFIG: Drop in your redirect link here
+// CONFIG
 // ─────────────────────────────────────────────
 const REDIRECT_URL = 'https://example.com/webinar-confirmed'; // TODO: replace with real webinar / calendar / thank-you link
 const REDIRECT_DELAY_SECONDS = 5;
+
+// GHL Inbound Webhook URL (paste from GHL → Automation → Workflows → Inbound Webhook trigger)
+// See GHL-SETUP.md for the full step-by-step.
+const GHL_WEBHOOK_URL = ''; // TODO: paste your GHL Inbound Webhook URL here
 // ─────────────────────────────────────────────
+
+// Fire-and-forget POST to GHL — never blocks the redirect, never throws.
+function sendToGHL(payload) {
+  if (!GHL_WEBHOOK_URL) return;
+  try {
+    fetch(GHL_WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      keepalive: true,
+      mode: 'no-cors'
+    }).catch(() => {});
+  } catch (e) {}
+}
 
 const TOTAL_STEPS = 9;
 let answers = { q1:null, q2:null, q3:null, q4:null, q5:null, q6:null, q7:null, q8:null };
@@ -2419,24 +2437,48 @@ function submitForm() {
   const score = breakdown.total;
   const t = tier(score);
 
-  // payload for backend (CRM / email automation)
+  // Human-readable labels for each quiz answer (for GHL field display + setter context)
+  const Q_LABELS = {
+    q1: ['Less than $3K/mo','$3K-$10K/mo','$10K-$30K/mo','$30K-$100K/mo','$100K+/mo'],
+    q2: ['Employed','Self-employed','Business owner','Between jobs','Retired'],
+    q3: ['Family','Fight','Freedom','Faith','Fit','All of them'],
+    q4: ['Clear plan/roadmap','Mentor or coach','Discipline & accountability','Belief & confidence','Right network'],
+    q5: ['Never','Free stuff only','Courses or programs','Coaches or mentors'],
+    q6: ['First $10K month','Scale income & wealth','Business that runs without me','Clarity & direction','Legacy for family'],
+    q7: ['Just exploring','Open to change','Ready to do the work','All in, starting today'],
+    q8: ['Under 25','25-34','35-44','45-54','55+']
+  };
+  const label = (q) => (Q_LABELS[q] && answers[q] !== null) ? Q_LABELS[q][answers[q]] : '';
+
+  // Flat payload — every key becomes a custom field in GHL
   const payload = {
     firstName: fname,
     email: femail,
     phone: fphone,
     phoneCountry: fphoneCountry,
-    answers: answers,
     leadScore: score,
     leadScoreMax: 25,
-    leadScoreBreakdown: breakdown,
     tier: t.label,
+    breakdown_q1_income: breakdown.q1,
+    breakdown_q5_investment: breakdown.q5,
+    breakdown_q7_urgency: breakdown.q7,
+    breakdown_q8_age: breakdown.q8,
+    q1_income: label('q1'),
+    q2_position: label('q2'),
+    q3_area_needs_work: label('q3'),
+    q4_what_they_need: label('q4'),
+    q5_investment_history: label('q5'),
+    q6_biggest_goal: label('q6'),
+    q7_urgency: label('q7'),
+    q8_age: label('q8'),
     webinarDate: '2026-07-01T19:00:00-04:00',
-    submittedAt: new Date().toISOString()
+    submittedAt: new Date().toISOString(),
+    source: 'King Azoulay Webinar Landing'
   };
   console.log('LEAD PAYLOAD →', payload);
 
-  // TODO: post to backend
-  // fetch('/api/webinar/register', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload) });
+  // Send to GHL Inbound Webhook (fire-and-forget, won't block redirect)
+  sendToGHL(payload);
 
   // hide quiz steps + show success
   document.querySelectorAll('.q-step').forEach(s => s.classList.remove('active'));
