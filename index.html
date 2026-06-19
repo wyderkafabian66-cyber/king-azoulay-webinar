@@ -2239,13 +2239,19 @@ const REDIRECT_DELAY_SECONDS = 5;
 // GHL Inbound Webhook URL (paste from GHL → Automation → Workflows → Inbound Webhook trigger)
 // See GHL-SETUP.md for the full step-by-step.
 const GHL_WEBHOOK_URL = ''; // TODO: paste your GHL Inbound Webhook URL here
+
+// Google Apps Script Webhook URL (paste from Apps Script → Deploy → Web App)
+// See GOOGLE-SHEETS-SETUP.md for the full step-by-step.
+// If set, every submission lands in a Google Sheet (and that script can
+// also forward to GHL for you, so you only need one or the other).
+const SHEETS_WEBHOOK_URL = ''; // TODO: paste your Apps Script Web App URL here
 // ─────────────────────────────────────────────
 
-// Fire-and-forget POST to GHL — never blocks the redirect, never throws.
-function sendToGHL(payload) {
-  if (!GHL_WEBHOOK_URL) return;
+// Fire-and-forget POST — never blocks the redirect, never throws.
+function postWebhook(url, payload) {
+  if (!url) return;
   try {
-    fetch(GHL_WEBHOOK_URL, {
+    fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
@@ -2254,6 +2260,9 @@ function sendToGHL(payload) {
     }).catch(() => {});
   } catch (e) {}
 }
+
+function sendToGHL(payload) { postWebhook(GHL_WEBHOOK_URL, payload); }
+function sendToSheets(payload) { postWebhook(SHEETS_WEBHOOK_URL, payload); }
 
 const TOTAL_STEPS = 9;
 let answers = { q1:null, q2:null, q3:null, q4:null, q5:null, q6:null, q7:null, q8:null };
@@ -2477,8 +2486,9 @@ function submitForm() {
   };
   console.log('LEAD PAYLOAD →', payload);
 
-  // Send to GHL Inbound Webhook (fire-and-forget, won't block redirect)
+  // Send to GHL and/or Google Sheets (both fire-and-forget, won't block redirect)
   sendToGHL(payload);
+  sendToSheets(payload);
 
   // hide quiz steps + show success
   document.querySelectorAll('.q-step').forEach(s => s.classList.remove('active'));
