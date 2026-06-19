@@ -229,8 +229,21 @@ The Apps Script is looking for a tab named exactly `Leads` (capital L, no spaces
 ### Columns are off / data lands in wrong columns
 You changed the header row order. The Apps Script expects columns in the specific order from Step 1.3. Either restore the original headers, or edit the row order in the Apps Script `doPost` function to match yours.
 
+### POST returns 405 / form submissions never reach the sheet (even though GET works)
+**This is the #1 gotcha.** Apps Script Web Apps freeze the code at the moment you click Deploy. Any code edits you make AFTER deploying are NOT live until you redeploy with a new version.
+
+**Fix:**
+1. Open the Apps Script editor.
+2. Click **Deploy → Manage deployments**.
+3. Click the **pencil/edit icon ✏️** on your active deployment.
+4. In the **Version** dropdown, select **"New version"** ← this is the critical step.
+5. Click **Deploy**.
+6. The URL stays the same. The new code goes live. Re-test.
+
+**Whenever you change anything in `Code.gs`, do this redeploy step.** Otherwise the website is talking to a stale version.
+
 ### Authorization expired / script stopped working
-Apps Script Web Apps occasionally need re-authorization. Go to **Deploy → Manage deployments**, click the **pencil/edit icon** next to your active deployment, change "Version" to "New version", click Deploy. Re-authorize if prompted.
+Apps Script Web Apps occasionally need re-authorization. Same fix as above: **Deploy → Manage deployments**, edit, change "Version" to "New version", click Deploy. Re-authorize if prompted.
 
 ### Want to receive an email every time a new HOT lead lands
 Add this to the bottom of `doPost`, right before the final `return`:
