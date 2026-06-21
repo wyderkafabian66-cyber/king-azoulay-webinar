@@ -1306,8 +1306,18 @@ body.modal-open { overflow:hidden; }
 .e-in.error { border-color:#e74c3c; }
 
 /* intl-tel-input dark theme */
-.iti { width:100%; }
-.iti__tel-input { width:100%; }
+.iti {
+  display:block !important;
+  width:100%;
+  position:relative;
+  z-index:1;
+}
+.iti__tel-input {
+  width:100% !important;
+  padding-left:92px !important;
+  box-sizing:border-box;
+  min-height:50px;
+}
 .iti--inline-dropdown .iti__dropdown-content {
   background:var(--ink);
   border:1px solid var(--border-strong);
