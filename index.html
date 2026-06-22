@@ -1655,7 +1655,7 @@ footer {
         <div class="hm-icon">📅</div>
         <div class="hm-txt">
           <div class="hm-label">When</div>
-          <div class="hm-val">July 1st · 7PM EST</div>
+          <div class="hm-val">July 1st · 11AM PST</div>
         </div>
       </div>
       <div class="hm-item">
@@ -2202,7 +2202,7 @@ footer {
         </div>
         <div class="success-msg" id="successMsg">
           Check your inbox for the live webinar link.<br>
-          Mark your calendar for <strong>July 1st · 7PM EST</strong>.
+          Mark your calendar for <strong>July 1st · 11AM PST</strong>.
         </div>
         <a href="#" class="success-cta" id="successCta">Continue →</a>
         <div class="success-redirect" id="successRedirect">
@@ -2491,7 +2491,7 @@ function submitForm() {
     q6_biggest_goal: label('q6'),
     q7_urgency: label('q7'),
     q8_age: label('q8'),
-    webinarDate: '2026-07-01T19:00:00-04:00',
+    webinarDate: '2026-07-01T11:00:00-07:00',
     submittedAt: new Date().toISOString(),
     source: 'King Azoulay Webinar Landing'
   };
@@ -2573,7 +2573,7 @@ function submitForm() {
 })();
 
 // COUNTDOWN
-const webinarTime = new Date('2026-07-01T19:00:00-04:00').getTime();
+const webinarTime = new Date('2026-07-01T11:00:00-07:00').getTime();
 function updateCountdown() {
   const now = Date.now();
   const diff = webinarTime - now;
