@@ -239,7 +239,7 @@ Notes: [any insights from convo]
 
 ## Webinar Context to Reference
 
-* Date: **July 1st, 11AM PST** (90 minutes, live)
+* Date: **July 13th, 11AM PST** (90 minutes, live)
 * It's free, but only 100 seats per broadcast
 * King's 5-Star System: **Family · Fight · Freedom · Faith · Fit**
 * Frame: "you're at X stars right now, the goal is 5"
