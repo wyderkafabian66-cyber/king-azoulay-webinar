@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;700&family=Cinzel:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.min.css">
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+<script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/lyrgyy2r8r.js" async type="module"></script>
 <style>
 :root {
   --gold:        #C9A961;
@@ -436,6 +438,73 @@ nav {
   font-family:'Manrope';
   font-size:9px; font-weight:600;
   color:var(--grey); text-align:center;
+}
+
+/* HERO VSL — wistia player with premium gold frame */
+.hero-vsl-wrap {
+  max-width:780px;
+  margin:18px auto 36px;
+  position:relative;
+  padding:8px;
+  border-radius:14px;
+  background:linear-gradient(180deg, rgba(201,169,97,0.18) 0%, rgba(201,169,97,0.04) 100%);
+  border:1px solid var(--border-strong);
+  box-shadow:
+    0 0 0 1px rgba(201,169,97,0.08),
+    0 30px 80px rgba(0,0,0,0.6),
+    0 0 120px rgba(201,169,97,0.18);
+}
+.hero-vsl-wrap::before {
+  content:'';
+  position:absolute;
+  inset:-3px;
+  border-radius:16px;
+  background:linear-gradient(135deg, var(--gold-bright) 0%, transparent 40%, transparent 60%, var(--gold-bright) 100%);
+  z-index:-1;
+  opacity:0.35;
+  filter:blur(10px);
+  pointer-events:none;
+}
+.hero-vsl-wrap::after {
+  content:'⚜ Watch · 2 min';
+  position:absolute;
+  top:-14px;
+  left:50%;
+  transform:translateX(-50%);
+  background:linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+  color:#0a0a0a;
+  font-family:'Inter';
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  padding:6px 16px;
+  border-radius:4px;
+  white-space:nowrap;
+  box-shadow:0 4px 14px rgba(201,169,97,0.4);
+  z-index:3;
+}
+.hero-vsl {
+  border-radius:8px;
+  overflow:hidden;
+  background:#000;
+  aspect-ratio:16/9;
+  position:relative;
+}
+.hero-vsl wistia-player {
+  width:100%;
+  height:100%;
+  display:block;
+}
+wistia-player[media-id='lyrgyy2r8r']:not(:defined) {
+  background:center / contain no-repeat url('https://fast.wistia.com/embed/medias/lyrgyy2r8r/swatch');
+  display:block;
+  filter:blur(5px);
+  padding-top:56.25%;
+}
+@media (max-width:768px) {
+  .hero-vsl-wrap { margin:12px auto 24px; padding:5px; }
+  .hero-vsl-wrap::after { font-size:9px; letter-spacing:2px; padding:5px 12px; top:-12px; }
 }
 
 /* TICKER */
@@ -1614,11 +1683,9 @@ footer {
     <p class="hero-sub">
       Life is GTA. You don't level up by doing nothing. You level up on purpose, with the work. On July 13th, I'm breaking down the <strong>5-star system</strong> that maxes out the stats that actually matter: <strong>Family · Fight · Freedom · Faith · Fit</strong>. So you can make real money, protect your family, fight your own battles, and live free anywhere in the world without ever worrying about what's outside your control.
     </p>
-    <div class="hero-visual">
-      <div class="portrait-frame">
-        <img src="king-hero.jpeg" alt="King Azoulay" onerror="this.style.display='none'">
-        <div class="portrait-init">K</div>
-        <div class="portrait-name">King Azoulay</div>
+    <div class="hero-vsl-wrap">
+      <div class="hero-vsl">
+        <wistia-player media-id="lyrgyy2r8r" aspect="1.7777777777777777"></wistia-player>
       </div>
     </div>
 
