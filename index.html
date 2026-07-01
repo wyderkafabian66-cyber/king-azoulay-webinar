@@ -2242,7 +2242,7 @@ footer {
       <!-- STEP 1: CONTACT (always first) -->
       <div class="q-step active" id="step1">
         <div class="e-step">
-          <div class="e-tag"><span class="pulse-dot"></span>Where Should We Send The Link?</div>
+          <div class="e-tag"><span class="pulse-dot"></span>Where Should The King's Team Reach You?</div>
           <div class="drop-label">Your <em>details first</em>, so we never lose touch.</div>
           <div class="e-fields">
             <input class="e-in" type="text" id="fname" placeholder="First name">
@@ -2251,7 +2251,7 @@ footer {
             <div class="email-error" id="emailErr"></div>
           </div>
           <div class="e-fine">
-            🔒 Your details are sacred. No spam, just your webinar link and reminders before July 13th.
+            🔒 Your details are sacred. No spam. The King's team will message you personally with everything you need before July 13th.
           </div>
         </div>
         <div class="q-prog">
@@ -2273,7 +2273,7 @@ footer {
           <div class="val" id="scoreVal">...</div>
         </div>
         <div class="success-msg" id="successMsg">
-          Check your inbox for the live webinar link.<br>
+          The King's team will message you shortly with everything you need.<br>
           Mark your calendar for <strong>July 13th · 11AM PST</strong>.
         </div>
         <a href="#" class="success-cta" id="successCta">Continue →</a>
@@ -2612,7 +2612,7 @@ function submitForm() {
   const tierEl = document.getElementById('successTier');
   tierEl.textContent = t.label;
   tierEl.className = 'success-tier ' + t.cls;
-  document.getElementById('successMsg').innerHTML = t.msg + '<br><br>Check <strong>' + femail + '</strong> for your access link.';
+  document.getElementById('successMsg').innerHTML = t.msg + '<br><br>Keep an eye on your phone. The King\'s team will message you with the access link and reminders.';
 
   // No auto-redirect - they stay on the success screen
   document.getElementById('successCta').style.display = 'none';
