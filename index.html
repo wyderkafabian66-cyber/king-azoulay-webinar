@@ -2495,12 +2495,10 @@ function validateContact() {
     emailEl.classList.add('error');
     return;
   }
-  // Phone: require actual digits typed, not just the country dial code
-  const phoneValid = phoneIti
-    ? phoneIti.isValidNumber() || (phoneIti.getNumber() && phoneIti.getNumber().replace(/\D/g, '').length >= 8)
-    : phoneRaw.replace(/\D/g, '').length >= 8;
-  if (!phoneValid) {
-    err.textContent = 'Please enter your phone number (type the digits next to the country code).';
+  // Phone: just count digits typed in the input (ignore country dial code chip)
+  const phoneDigits = phoneRaw.replace(/\D/g, '');
+  if (phoneDigits.length < 6) {
+    err.textContent = 'Please type your phone number.';
     err.classList.add('show');
     phoneEl.classList.add('error');
     return;
