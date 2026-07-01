@@ -2513,8 +2513,25 @@ function validateContact() {
 function submitForm() {
   const fname = document.getElementById('fname').value.trim();
   const femail = document.getElementById('femail').value.trim();
-  // Get E.164 international format from intl-tel-input (e.g. "+14155551234")
-  const fphone = phoneIti ? phoneIti.getNumber() : document.getElementById('fphone').value.trim();
+  // Get phone number — try intl-tel-input's E.164 formatter first,
+  // fallback to combining dial code + raw input if utils script didn't load
+  const rawPhoneInput = document.getElementById('fphone').value.trim();
+  let fphone = '';
+  if (phoneIti && typeof phoneIti.getNumber === 'function') {
+    const itiNum = phoneIti.getNumber() || '';
+    if (itiNum.replace(/\D/g, '').length >= 6) {
+      fphone = itiNum; // Preferred: E.164 format from library
+    } else if (rawPhoneInput) {
+      // Utils script didn't load. Manually combine dial code + typed digits.
+      const dialCode = phoneIti.getSelectedCountryData &&
+                       phoneIti.getSelectedCountryData().dialCode;
+      const cleanTyped = rawPhoneInput.replace(/\D/g, '');
+      fphone = dialCode ? '+' + dialCode + cleanTyped : rawPhoneInput;
+    }
+  } else {
+    fphone = rawPhoneInput;
+  }
+  console.log('Phone captured for payload:', fphone);
   const fphoneCountry = phoneIti && phoneIti.getSelectedCountryData ? phoneIti.getSelectedCountryData().iso2 : null;
   const err = document.getElementById('emailErr');
   const emailEl = document.getElementById('femail');
