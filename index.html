@@ -2247,7 +2247,7 @@ footer {
           <div class="e-fields">
             <input class="e-in" type="text" id="fname" placeholder="First name">
             <input class="e-in" type="email" id="femail" placeholder="Email address">
-            <input class="e-in" type="tel" id="fphone" placeholder="Phone (for SMS reminder)">
+            <input class="e-in" type="tel" id="fphone" placeholder="Type your phone number">
             <div class="email-error" id="emailErr"></div>
           </div>
           <div class="e-fine">
@@ -2479,6 +2479,8 @@ function tier(score) {
 function validateContact() {
   const fname = document.getElementById('fname').value.trim();
   const femail = document.getElementById('femail').value.trim();
+  const phoneEl = document.getElementById('fphone');
+  const phoneRaw = phoneEl.value.trim();
   const err = document.getElementById('emailErr');
   const emailEl = document.getElementById('femail');
 
@@ -2493,6 +2495,17 @@ function validateContact() {
     emailEl.classList.add('error');
     return;
   }
+  // Phone: require actual digits typed, not just the country dial code
+  const phoneValid = phoneIti
+    ? phoneIti.isValidNumber() || (phoneIti.getNumber() && phoneIti.getNumber().replace(/\D/g, '').length >= 8)
+    : phoneRaw.replace(/\D/g, '').length >= 8;
+  if (!phoneValid) {
+    err.textContent = 'Please enter your phone number (type the digits next to the country code).';
+    err.classList.add('show');
+    phoneEl.classList.add('error');
+    return;
+  }
+  phoneEl.classList.remove('error');
   err.classList.remove('show');
   emailEl.classList.remove('error');
   contactValidated = true;
