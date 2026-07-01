@@ -2586,22 +2586,9 @@ function submitForm() {
   tierEl.className = 'success-tier ' + t.cls;
   document.getElementById('successMsg').innerHTML = t.msg + '<br><br>Check <strong>' + femail + '</strong> for your access link.';
 
-  // wire CTA + auto-redirect
-  const ctaBtn = document.getElementById('successCta');
-  ctaBtn.href = REDIRECT_URL;
-  ctaBtn.textContent = 'Access The Webinar →';
-
-  let remaining = REDIRECT_DELAY_SECONDS;
-  const rsEl = document.getElementById('redirectSecs');
-  rsEl.textContent = remaining;
-  const tick = setInterval(() => {
-    remaining--;
-    rsEl.textContent = remaining;
-    if (remaining <= 0) {
-      clearInterval(tick);
-      window.location.href = REDIRECT_URL;
-    }
-  }, 1000);
+  // No auto-redirect - they stay on the success screen
+  document.getElementById('successCta').style.display = 'none';
+  document.getElementById('successRedirect').style.display = 'none';
 }
 
 // ──────────────────────────────

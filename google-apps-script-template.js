@@ -41,7 +41,7 @@ function doPost(e) {
       new Date(),                              // A: Timestamp
       data.firstName || '',                    // B: First Name
       data.email || '',                        // C: Email
-      data.phone || '',                        // D: Phone
+      data.phone ? "'" + String(data.phone) : '', // D: Phone (leading apostrophe forces Sheets to treat as text — no scientific notation, keeps the "+")
       data.phoneCountry || '',                 // E: Country
       data.leadScore || 0,                     // F: Lead Score
       data.tier || '',                         // G: Tier
