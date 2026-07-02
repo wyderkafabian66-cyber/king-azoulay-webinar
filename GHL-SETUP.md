@@ -316,7 +316,7 @@ You did all the setup but the workflow is still in **Draft** mode. Until you pub
 Once you've confirmed Step 9 works, here are the workflows to build next:
 
 ### Pre-webinar sequence (all tiers)
-1. **2 days before July 13th** → text reminder
+1. **2 days before July 5th** → text reminder
 2. **Day before** → the day-before script from LEAD-SCORE.md
 3. **30 min before** → final live-link reminder
 
